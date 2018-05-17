@@ -2261,7 +2261,7 @@ html:not(.preview-mode) .toolbar.for-constructor .locked-button.invisible-button
   height: 50px;
   border-radius: 25px;
   margin-left: 6px;
-  background-color: rgba(104, 104, 104, 0.96);
+  background-color: rgba(128, 128, 128, 0.96);
   text-decoration: none;
   -webkit-transition: -webkit-transform 0.45s cubic-bezier(0.56, 0.86, 0.59, 1), background-color 0.2s ease-in-out, background-position 0.25s ease-in-out, z-index 0.5s ease-in-out, opacity 0.5s ease-in-out, visibility 0.5s ease-in-out;
   transition: transform 0.45s cubic-bezier(0.56, 0.86, 0.59, 1), background-color 0.2s ease-in-out, background-position 0.25s ease-in-out, z-index 0.5s ease-in-out, opacity 0.5s ease-in-out, visibility 0.5s ease-in-out;
@@ -6135,6 +6135,8 @@ a.goback-link {
 }
 .rmwidget.widget-shape {
   pointer-events: none;
+  font-size: 0;
+  line-height: 0;
 }
 .rmwidget.widget-shape svg {
   overflow: visible;
@@ -7392,6 +7394,9 @@ html.no-isdesktop {
 .common-button .text::-moz-selection {
   background: rgba(73, 162, 255, 0.5);
 }
+.alt-key-pressed .block.button .content .common-button input.text[readonly]:hover {
+  cursor: copy;
+}
 .widget-form.fonts-pending .caption {
   visibility: hidden;
 }
@@ -7707,6 +7712,9 @@ html.no-isdesktop {
 }
 .common-hotspot .tip.viewer .hotspot-phone-close {
   display: none;
+}
+.alt-key-pressed .common-hotspot .pin {
+  cursor: copy;
 }
 .hotspot-fullscreen-wrapper {
   position: fixed;

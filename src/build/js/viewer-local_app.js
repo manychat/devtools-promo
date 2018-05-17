@@ -37,8 +37,8 @@ Modernizr.addTest("retina", function() {
 }), Modernizr.addTest("firefox", function() {
     return window.navigator.userAgent.toLowerCase().indexOf("firefox") > -1;
 }), Modernizr.addTest("csspositionsticky", function() {
-    var t = "position:", e = "sticky", i = document.createElement("modernizr").style;
-    return i.cssText = t + Modernizr._prefixes.join(e + ";" + t).slice(0, -t.length), -1 !== i.position.indexOf(e);
+    var t = "position:", e = document.createElement("modernizr").style;
+    return e.cssText = t + Modernizr._prefixes.join("sticky;" + t).slice(0, -t.length), -1 !== e.position.indexOf("sticky");
 }), function(t) {
     "function" == typeof define && define.amd ? define([ "jquery" ], t) : "object" === ("undefined" == typeof exports ? "undefined" : _typeof(exports)) ? module.exports = t : t(jQuery);
 }(function(t) {
@@ -283,6 +283,7 @@ Modernizr.addTest("retina", function() {
     w: 87,
     v: 86,
     x: 88,
+    b: 66,
     m: 77
 }, function(t, e) {
     var i = {
@@ -862,7 +863,7 @@ Modernizr.addTest("retina", function() {
         var __t, __p = "", __j = Array.prototype.join, print = function() {
             __p += __j.call(arguments, "");
         };
-        with (obj || {}) __p += '\n\t<div class="whats-new">\n\t\t<div class="panel-wrapper">\n\t\t\t<div class="panel">\n\t\t\t\t<div class="content">\n\t\t\t\t\t<div class="wn-page" data-date="2013-11-19">\n\t\t\t\t\t\t<div class="caption">What\'s new</div>\n\t\t\t\t\t\t<div class="date">November 19<span>th</span></div>\n\t\t\t\t\t\t<div class="picture"></div>\n\t\t\t\t\t\t<div class="text">Introducing Domain Mapping<br/>and New Price.</div>\n\t\t\t\t\t\t<a class="learn-more" href="https://readymag.com/p43952/" target="blank">Learn More</a>\n\t\t\t\t\t</div>\n\t\t\t\t\t<div class="wn-page" data-date="2013-12-16">\n\t\t\t\t\t\t<div class="caption">What\'s new</div>\n\t\t\t\t\t\t<div class="date">December 16<span>th</span></div>\n\t\t\t\t\t\t<div class="picture"></div>\n\t\t\t\t\t\t\x3c!--__magterm--\x3e\n\t\t\t\t\t\t<div class="text">Duplicating projects, Instagram<br/>and SVG support.</div>\n\t\t\t\t\t\t<a class="learn-more" href="https://readymag.com/p53035/" target="_blank">Learn More</a>\n\t\t\t\t\t</div>\n\t\t\t\t\t<div class="wn-page" data-date="2014-01-20">\n\t\t\t\t\t\t<div class="caption">What\'s new</div>\n\t\t\t\t\t\t<div class="date">January 20<span>th</span></div>\n\t\t\t\t\t\t<div class="picture"></div>\n\t\t\t\t\t\t<div class="text">Rotation tool.<br/>Grouping widgets.<br/>Faster background images loading.<br/>Bug fixes.</div>\n\t\t\t\t\t</div>\n\t\t\t\t\t<div class="wn-page" data-date="2014-02-03">\n\t\t\t\t\t\t<div class="caption">What\'s new</div>\n\t\t\t\t\t\t<div class="date">February 4<span>th</span></div>\n\t\t\t\t\t\t<div class="picture">\n\t\t\t\t\t\t\t<div class="line"></div>\n\t\t\t\t\t\t\t<div class="line"></div>\n\t\t\t\t\t\t\t<div class="line"></div>\n\t\t\t\t\t\t</div>\n\t\t\t\t\t\t<div class="text">Introducing<br/>Viewer 1.0</div>\n\t\t\t\t\t\t<a class="learn-more" href="https://readymag.com/p67765/" target="_blank">Learn More</a>\n\t\t\t\t\t</div>\n\t\t\t\t\t<div class="wn-page" data-date="2014-03-04">\n\t\t\t\t\t\t<div class="caption">What\'s new</div>\n\t\t\t\t\t\t<div class="date">March 4<span>th</span></div>\n\t\t\t\t\t\t<div class="picture"></div>\n\t\t\t\t\t\t<div class="text">Custom Templates<br/>and iFrame</div>\n\t\t\t\t\t\t<a class="learn-more" href="https://readymag.com/p85654/" target="_blank">Learn More</a>\n\t\t\t\t\t</div>\n\t\t\t\t\t<div class="wn-page" data-date="2014-03-19">\n\t\t\t\t\t\t<div class="caption">What\'s new</div>\n\t\t\t\t\t\t<div class="date">March 19<span>th</span></div>\n\t\t\t\t\t\t<div class="picture"></div>\n\t\t\t\t\t\t<div class="text">Track your audience with<br/>Google Analytics</div>\n\t\t\t\t\t\t<a class="learn-more" href="http://help.readymag.com/ga/" target="_blank">Learn More</a>\n\t\t\t\t\t</div>\n                    <div class="wn-page" data-date="2014-04-14">\n                        <div class="caption">What\'s new</div>\n                        <div class="date">April 14<span>th</span></div>\n                        <div class="picture"></div>\n                        <div class="text">Introducing<br/>Viewport & Mobile Viewer</div>\n                        <a class="learn-more" href="https://readymag.com/p100897/" target="_blank">Learn More</a>\n                    </div>\n                    <div class="wn-page" data-date="2014-06-24">\n                        <div class="caption">What\'s new</div>\n                        <div class="date">June 24<span>th</span></div>\n                        <div class="picture"></div>\n                        <div class="text">Introducing<br/>Font Explorer</div>\n                        <a class="learn-more" href="https://readymag.com/p151687/" target="_blank">Learn More</a>\n                    </div>\n                    <div class="wn-page" data-date="2014-08-04">\n                        <div class="caption">What\'s new</div>\n                        <div class="date">August 4<span>th</span></div>\n                        <div class="picture"></div>\n                        <div class="text">Introducing New<br/>Webfonts</div>\n                        <a class="learn-more" href="https://readymag.com/p156787/" target="_blank">Learn More</a>\n                    </div>\n                    <div class="wn-page" data-date="2014-09-04">\n                        <div class="caption">What\'s new</div>\n                        <div class="date">September 4<span>th</span></div>\n                        <div class="picture"></div>\n                        <div class="text">Introducing<br/>Template Center</div>\n                        <a class="learn-more" href="https://readymag.com/p172473/" target="_blank">Learn More</a>\n                    </div>\n                    <div class="wn-page" data-date="2014-09-30">\n                        <div class="caption">What\'s new</div>\n                        <div class="date">September 30<span>th</span></div>\n                        <div class="picture"></div>\n                        <div class="text">Introducing<br/>PDF Export</div>\n                        <a class="learn-more" href="https://readymag.com/p185021/" target="_blank">Learn More</a>\n                    </div>\n                    <div class="wn-page" data-date="2014-11-05">\n                        <div class="caption">What\'s new</div>\n                        <div class="date">November 5<span>th</span></div>\n                        <div class="picture"></div>\n                        <div class="text">Introducing<br/>100,000 icons</div>\n                        <a class="learn-more" href="https://readymag.com/p220371/" target="_blank">Learn More</a>\n                    </div>\n                    <div class="wn-page" data-date="2014-12-09">\n                        <div class="caption">What\'s new</div>\n                        <div class="date">December 9<span>th</span></div>\n                        <div class="picture"></div>\n                        <div class="text">Introducing<br/>Link Styles & Fix Position</div>\n                        <a class="learn-more" href="https://readymag.com/p243325/" target="_blank">Learn More</a>\n                    </div>\n                    <div class="wn-page" data-date="2015-01-29">\n                        <div class="caption">What\'s new</div>\n                        <div class="date">January 29<span>th</span></div>\n                        <div class="picture"></div>\n                        <div class="text">Introducing<br/>New Embeds</div>\n                        <a class="learn-more" href="https://readymag.com/p288252/" target="_blank">Learn More</a>\n                    </div>\n\t\t\t\t\t<div class="wn-page" data-date="2015-02-10">\n\t\t\t\t\t    <div class="caption">What\'s new</div>\n\t\t\t\t\t    <div class="date">February 10<span>th</span></div>\n\t\t\t\t\t    <div class="picture"></div>\n\t\t\t\t\t    <div class="text">2 Little Things:<br/>Trash & Pages URLs</div>\n\t\t\t\t\t    <a class="learn-more" href="https://readymag.com/p304538/" target="_blank">Learn More</a>\n\t\t\t\t\t</div>\n\t\t\t\t\t<div class="wn-page" data-date="2015-03-04">\n\t\t\t\t\t    <div class="caption">What\'s new</div>\n\t\t\t\t\t    <div class="date">March 4<span>th</span></div>\n\t\t\t\t\t    <div class="picture"></div>\n\t\t\t\t\t\t<div class="text">Introducing<br/>Viewer 2.0</div>\n\t\t\t\t\t    <a class="learn-more" href="https://readymag.com/p325057/" target="_blank">Learn More</a>\n\t\t\t\t\t</div>\n\t\t\t\t\t<div class="wn-page" data-date="2015-04-14">\n\t\t\t\t\t    <div class="caption">What\'s new</div>\n\t\t\t\t\t    <div class="date">April 14<span>th</span></div>\n\t\t\t\t\t    <div class="picture"></div>\n\t\t\t\t\t\t<div class="text">Introducing<br/>Scroll Navigation</div>\n\t\t\t\t\t    <a class="learn-more" href="https://readymag.com/p360474/" target="_blank">Learn More</a>\n\t\t\t\t\t</div>\n\t\t\t\t\t<div class="wn-page" data-date="2015-05-14">\n\t\t\t\t\t    <div class="caption">What\'s new</div>\n\t\t\t\t\t    <div class="date">May 14<span>th</span></div>\n\t\t\t\t\t    <div class="picture"></div>\n\t\t\t\t\t\t<div class="text">Introducing<br/>Buttons, Anchors &amp; Full Width</div>\n\t\t\t\t\t    <a class="learn-more" href="https://readymag.com/p430667/" target="_blank">Learn More</a>\n\t\t\t\t\t</div>\n\n\t\t\t\t\t\x3c!-- Special terms agree message. For next terms change just increase version number in backend config and set new data-date to show. This block position inside template does not matter --\x3e\n\t\t\t\t\t<div class="wn-page agree-terms" data-version="' + (null == (__t = RM.constants.CURRENT_TERMS_VERSION) ? "" : __t) + '" data-date="2015-09-02">\n\t\t\t\t\t    <div class="caption">UPDATE</div>\n\t\t\t\t\t    <div class="date">Terms of Service</div>\n\t\t\t\t\t\t<div class="text">Hey!<br/>We’ve recently slightly updated our <a href="https://readymag.com/readymag/terms-and-privacy/" target="_blank">Terms of Service</a> due to launching the new Teamwork feature. Please review the changes, as by continuing to use Readymag you automatically accept them. Have a great day!</div>\n\t\t\t\t\t    <div class="learn-more agree-terms-button">I agree</div>\n\t\t\t\t\t</div>\n\t\t\t\t\t\x3c!-- Special terms agree message end --\x3e\n\n\t\t\t\t\t<div class="wn-page" data-date="2015-09-03">\n\t\t\t\t\t    <div class="caption">What\'s new</div>\n\t\t\t\t\t    <div class="date">Sep 3<span>rd</span></div>\n\t\t\t\t\t    <div class="picture"></div>\n\t\t\t\t\t\t<div class="text">Introducing<br/>Teamwork</div>\n\t\t\t\t\t    <a class="learn-more" href="https://readymag.com/p683180/" target="_blank">Learn More</a>\n\t\t\t\t\t</div>\n\n\t\t\t\t\t<div class="wn-page" data-date="2015-10-09">\n\t\t\t\t\t    <div class="caption">What\'s new</div>\n\t\t\t\t\t    <div class="date">Oct 9<span>th</span></div>\n\t\t\t\t\t    <div class="picture"></div>\n\t\t\t\t\t\t<div class="text">Introducing<br/>Hotspot</div>\n\t\t\t\t\t    <a class="learn-more" href="https://readymag.com/p921047/" target="_blank">Learn More</a>\n\t\t\t\t\t</div>\n\n\t\t\t\t\t<div class="wn-page" data-date="2015-11-18">\n\t\t\t\t\t    <div class="caption">What\'s new</div>\n\t\t\t\t\t    <div class="date">Nov 18<span>th</span></div>\n\t\t\t\t\t    <div class="picture"></div>\n\t\t\t\t\t\t<div class="text">Introducing<br/>5 Tiny Features</div>\n\t\t\t\t\t    <a class="learn-more" href="https://readymag.com/p1016246/" target="_blank">Learn More</a>\n\t\t\t\t\t</div>\n\t\t\t\t\t<div class="wn-page" data-date="2016-01-20">\n\t\t\t\t\t    <div class="caption">What\'s new</div>\n\t\t\t\t\t    <div class="date">Jan 19<span>th</span></div>\n\t\t\t\t\t    <div class="picture"></div>\n\t\t\t\t\t\t<div class="text">Introducing<br/>Animations</div>\n\t\t\t\t\t    <a class="learn-more" href="http://animations.readymag.com/" target="_blank">Learn More</a>\n\t\t\t\t\t</div>\n\t\t\t\t\t<div class="wn-page" data-date="2016-04-12">\n\t\t\t\t\t    <div class="caption">What\'s new</div>\n\t\t\t\t\t    <div class="date">Apr 12<span>th</span></div>\n\t\t\t\t\t    <div class="picture"></div>\n\t\t\t\t\t    <a class="learn-more" href="https://readymag.com/p1351980/" target="_blank">Learn More</a>\n\t\t\t\t\t</div>\n\t\t\t\t\t<div class="wn-page" data-date="2016-08-04">\n\t\t\t\t\t    <div class="caption">What\'s new</div>\n\t\t\t\t\t    <div class="date">Aug 4<span>th</span></div>\n\t\t\t\t\t    <div class="picture"></div>\n\t\t\t\t\t    <a class="learn-more" href="https://readymag.com/p1617587/" target="_blank">Learn More</a>\n\t\t\t\t\t</div>\n\t\t\t\t\t<div class="wn-page" data-date="2016-09-29">\n\t\t\t\t\t    <div class="caption">What\'s new</div>\n\t\t\t\t\t    <div class="date">Sep 29<span>th</span></div>\n\t\t\t\t\t    <div class="picture"></div>\n\t\t\t\t\t    <a class="learn-more" href="https://readymag.com/p1730817/" target="_blank">Learn More</a>\n\t\t\t\t\t</div>\n\t\t\t\t\t<div class="wn-page" data-date="2016-12-01">\n\t\t\t\t\t    <div class="caption">What\'s new</div>\n\t\t\t\t\t    <div class="date">Dec 1<span>st</span></div>\n\t\t\t\t\t    <div class="picture"></div>\n\t\t\t\t\t    <a class="learn-more" href="https://readymag.com/p1921011/" target="_blank">Learn More</a>\n\t\t\t\t\t</div>\n\t\t\t\t\t<div class="wn-page" data-date="2017-02-07">\n\t\t\t\t\t    <div class="caption">What\'s new</div>\n\t\t\t\t\t    <div class="date">Feb 7<span>th</span></div>\n\t\t\t\t\t    <div class="picture"></div>\n\t\t\t\t\t    <a class="learn-more" href="https://readymag.com/p2117051/" target="_blank">Learn More</a>\n\t\t\t\t\t</div>\n\t\t\t\t\t<div class="wn-page" data-date="2017-05-03">\n\t\t\t\t\t    <div class="caption">What\'s new</div>\n\t\t\t\t\t    <div class="date">May 3<span>rd</span></div>\n\t\t\t\t\t    <div class="picture"></div>\n\t\t\t\t\t    <a class="learn-more" href="https://readymag.com/p2346155/" target="_blank">Learn More</a>\n\t\t\t\t\t</div>\n\t\t\t\t\t<div class="wn-page" data-date="2017-08-08">\n\t\t\t\t\t    <div class="caption">What\'s new</div>\n\t\t\t\t\t    <div class="date">August 8<span>th</span></div>\n\t\t\t\t\t    <div class="picture"></div>\n\t\t\t\t\t    <a class="learn-more" href="https://readymag.com/p2674515/" target="_blank">Learn More</a>\n\t\t\t\t\t</div>\n\t\t\t\t\t<div class="wn-page" data-date="2017-09-20">\n\t\t\t\t\t    <div class="caption">What\'s new</div>\n\t\t\t\t\t    <div class="date">Sep 20<span>th</span></div>\n\t\t\t\t\t    <div class="picture"></div>\n\t\t\t\t\t    <a class="learn-more" href="https://readymag.com/p2809932/" target="_blank">Learn More</a>\n\t\t\t\t\t</div>\n\t\t\t\t\t<div class="wn-page" data-date="2017-11-30">\n\t\t\t\t\t    <div class="caption">What\'s new</div>\n\t\t\t\t\t    <div class="date">Nov 30<span>th</span></div>\n\t\t\t\t\t    <div class="picture"></div>\n\t\t\t\t\t    <a class="learn-more" href="https://help.readymag.com/domains/" target="_blank">Learn More</a>\n\t\t\t\t\t</div>\n\t\t\t\t\t<div class="wn-page" data-date="2017-12-15">\n\t\t\t\t\t    <div class="caption">What\'s new</div>\n\t\t\t\t\t    <div class="date">Dec 15<span>th</span></div>\n\t\t\t\t\t    <div class="picture"></div>\n\t\t\t\t\t    <a class="learn-more" href="https://medium.com/@readymag/readymag-under-the-hood-faster-vertical-viewer-implementation-8615457fdf25" target="_blank">Learn More</a>\n\t\t\t\t\t</div>\n\t\t\t\t\t<div class="wn-page" data-date="2018-02-15">\n\t\t\t\t\t    <div class="caption">What\'s new</div>\n\t\t\t\t\t    <div class="date">Feb 15<span>th</span></div>\n\t\t\t\t\t    <div class="picture"></div>\n\t\t\t\t\t    <a class="learn-more" href="https://readymag.com/p3276335/" target="_blank">Learn More</a>\n\t\t\t\t\t</div>\n\t\t\t\t</div>\n\t\t\t\t<div class="close"></div>\n\t\t\t\t<div class="arrow up disabled"></div>\n\t\t\t\t<div class="arrow down"></div>\n\t\t\t</div>\n\t\t</div>\n\t</div>\n';
+        with (obj || {}) __p += '\n\t<div class="whats-new">\n\t\t<div class="panel-wrapper">\n\t\t\t<div class="panel">\n\t\t\t\t<div class="content">\n\t\t\t\t\t<div class="wn-page" data-date="2013-11-19">\n\t\t\t\t\t\t<div class="caption">What\'s new</div>\n\t\t\t\t\t\t<div class="date">November 19<span>th</span></div>\n\t\t\t\t\t\t<div class="picture"></div>\n\t\t\t\t\t\t<div class="text">Introducing Domain Mapping<br/>and New Price.</div>\n\t\t\t\t\t\t<a class="learn-more" href="https://readymag.com/p43952/" target="blank">Learn More</a>\n\t\t\t\t\t</div>\n\t\t\t\t\t<div class="wn-page" data-date="2013-12-16">\n\t\t\t\t\t\t<div class="caption">What\'s new</div>\n\t\t\t\t\t\t<div class="date">December 16<span>th</span></div>\n\t\t\t\t\t\t<div class="picture"></div>\n\t\t\t\t\t\t\x3c!--__magterm--\x3e\n\t\t\t\t\t\t<div class="text">Duplicating projects, Instagram<br/>and SVG support.</div>\n\t\t\t\t\t\t<a class="learn-more" href="https://readymag.com/p53035/" target="_blank">Learn More</a>\n\t\t\t\t\t</div>\n\t\t\t\t\t<div class="wn-page" data-date="2014-01-20">\n\t\t\t\t\t\t<div class="caption">What\'s new</div>\n\t\t\t\t\t\t<div class="date">January 20<span>th</span></div>\n\t\t\t\t\t\t<div class="picture"></div>\n\t\t\t\t\t\t<div class="text">Rotation tool.<br/>Grouping widgets.<br/>Faster background images loading.<br/>Bug fixes.</div>\n\t\t\t\t\t</div>\n\t\t\t\t\t<div class="wn-page" data-date="2014-02-03">\n\t\t\t\t\t\t<div class="caption">What\'s new</div>\n\t\t\t\t\t\t<div class="date">February 4<span>th</span></div>\n\t\t\t\t\t\t<div class="picture">\n\t\t\t\t\t\t\t<div class="line"></div>\n\t\t\t\t\t\t\t<div class="line"></div>\n\t\t\t\t\t\t\t<div class="line"></div>\n\t\t\t\t\t\t</div>\n\t\t\t\t\t\t<div class="text">Introducing<br/>Viewer 1.0</div>\n\t\t\t\t\t\t<a class="learn-more" href="https://readymag.com/p67765/" target="_blank">Learn More</a>\n\t\t\t\t\t</div>\n\t\t\t\t\t<div class="wn-page" data-date="2014-03-04">\n\t\t\t\t\t\t<div class="caption">What\'s new</div>\n\t\t\t\t\t\t<div class="date">March 4<span>th</span></div>\n\t\t\t\t\t\t<div class="picture"></div>\n\t\t\t\t\t\t<div class="text">Custom Templates<br/>and iFrame</div>\n\t\t\t\t\t\t<a class="learn-more" href="https://readymag.com/p85654/" target="_blank">Learn More</a>\n\t\t\t\t\t</div>\n\t\t\t\t\t<div class="wn-page" data-date="2014-03-19">\n\t\t\t\t\t\t<div class="caption">What\'s new</div>\n\t\t\t\t\t\t<div class="date">March 19<span>th</span></div>\n\t\t\t\t\t\t<div class="picture"></div>\n\t\t\t\t\t\t<div class="text">Track your audience with<br/>Google Analytics</div>\n\t\t\t\t\t\t<a class="learn-more" href="http://help.readymag.com/ga/" target="_blank">Learn More</a>\n\t\t\t\t\t</div>\n                    <div class="wn-page" data-date="2014-04-14">\n                        <div class="caption">What\'s new</div>\n                        <div class="date">April 14<span>th</span></div>\n                        <div class="picture"></div>\n                        <div class="text">Introducing<br/>Viewport & Mobile Viewer</div>\n                        <a class="learn-more" href="https://readymag.com/p100897/" target="_blank">Learn More</a>\n                    </div>\n                    <div class="wn-page" data-date="2014-06-24">\n                        <div class="caption">What\'s new</div>\n                        <div class="date">June 24<span>th</span></div>\n                        <div class="picture"></div>\n                        <div class="text">Introducing<br/>Font Explorer</div>\n                        <a class="learn-more" href="https://readymag.com/p151687/" target="_blank">Learn More</a>\n                    </div>\n                    <div class="wn-page" data-date="2014-08-04">\n                        <div class="caption">What\'s new</div>\n                        <div class="date">August 4<span>th</span></div>\n                        <div class="picture"></div>\n                        <div class="text">Introducing New<br/>Webfonts</div>\n                        <a class="learn-more" href="https://readymag.com/p156787/" target="_blank">Learn More</a>\n                    </div>\n                    <div class="wn-page" data-date="2014-09-04">\n                        <div class="caption">What\'s new</div>\n                        <div class="date">September 4<span>th</span></div>\n                        <div class="picture"></div>\n                        <div class="text">Introducing<br/>Template Center</div>\n                        <a class="learn-more" href="https://readymag.com/p172473/" target="_blank">Learn More</a>\n                    </div>\n                    <div class="wn-page" data-date="2014-09-30">\n                        <div class="caption">What\'s new</div>\n                        <div class="date">September 30<span>th</span></div>\n                        <div class="picture"></div>\n                        <div class="text">Introducing<br/>PDF Export</div>\n                        <a class="learn-more" href="https://readymag.com/p185021/" target="_blank">Learn More</a>\n                    </div>\n                    <div class="wn-page" data-date="2014-11-05">\n                        <div class="caption">What\'s new</div>\n                        <div class="date">November 5<span>th</span></div>\n                        <div class="picture"></div>\n                        <div class="text">Introducing<br/>100,000 icons</div>\n                        <a class="learn-more" href="https://readymag.com/p220371/" target="_blank">Learn More</a>\n                    </div>\n                    <div class="wn-page" data-date="2014-12-09">\n                        <div class="caption">What\'s new</div>\n                        <div class="date">December 9<span>th</span></div>\n                        <div class="picture"></div>\n                        <div class="text">Introducing<br/>Link Styles & Fix Position</div>\n                        <a class="learn-more" href="https://readymag.com/p243325/" target="_blank">Learn More</a>\n                    </div>\n                    <div class="wn-page" data-date="2015-01-29">\n                        <div class="caption">What\'s new</div>\n                        <div class="date">January 29<span>th</span></div>\n                        <div class="picture"></div>\n                        <div class="text">Introducing<br/>New Embeds</div>\n                        <a class="learn-more" href="https://readymag.com/p288252/" target="_blank">Learn More</a>\n                    </div>\n\t\t\t\t\t<div class="wn-page" data-date="2015-02-10">\n\t\t\t\t\t    <div class="caption">What\'s new</div>\n\t\t\t\t\t    <div class="date">February 10<span>th</span></div>\n\t\t\t\t\t    <div class="picture"></div>\n\t\t\t\t\t    <div class="text">2 Little Things:<br/>Trash & Pages URLs</div>\n\t\t\t\t\t    <a class="learn-more" href="https://readymag.com/p304538/" target="_blank">Learn More</a>\n\t\t\t\t\t</div>\n\t\t\t\t\t<div class="wn-page" data-date="2015-03-04">\n\t\t\t\t\t    <div class="caption">What\'s new</div>\n\t\t\t\t\t    <div class="date">March 4<span>th</span></div>\n\t\t\t\t\t    <div class="picture"></div>\n\t\t\t\t\t\t<div class="text">Introducing<br/>Viewer 2.0</div>\n\t\t\t\t\t    <a class="learn-more" href="https://readymag.com/p325057/" target="_blank">Learn More</a>\n\t\t\t\t\t</div>\n\t\t\t\t\t<div class="wn-page" data-date="2015-04-14">\n\t\t\t\t\t    <div class="caption">What\'s new</div>\n\t\t\t\t\t    <div class="date">April 14<span>th</span></div>\n\t\t\t\t\t    <div class="picture"></div>\n\t\t\t\t\t\t<div class="text">Introducing<br/>Scroll Navigation</div>\n\t\t\t\t\t    <a class="learn-more" href="https://readymag.com/p360474/" target="_blank">Learn More</a>\n\t\t\t\t\t</div>\n\t\t\t\t\t<div class="wn-page" data-date="2015-05-14">\n\t\t\t\t\t    <div class="caption">What\'s new</div>\n\t\t\t\t\t    <div class="date">May 14<span>th</span></div>\n\t\t\t\t\t    <div class="picture"></div>\n\t\t\t\t\t\t<div class="text">Introducing<br/>Buttons, Anchors &amp; Full Width</div>\n\t\t\t\t\t    <a class="learn-more" href="https://readymag.com/p430667/" target="_blank">Learn More</a>\n\t\t\t\t\t</div>\n\n\t\t\t\t\t\x3c!-- Special terms agree message. For next terms change just increase version number in backend config and set new data-date to show. This block position inside template does not matter --\x3e\n\t\t\t\t\t<div class="wn-page agree-terms" data-version="' + (null == (__t = RM.constants.CURRENT_TERMS_VERSION) ? "" : __t) + '" data-date="2015-09-02">\n\t\t\t\t\t    <div class="caption">UPDATE</div>\n\t\t\t\t\t    <div class="date">Terms of Service</div>\n\t\t\t\t\t\t<div class="text">Hey!<br/>We’ve recently slightly updated our <a href="https://readymag.com/readymag/terms-and-privacy/" target="_blank">Terms of Service</a> due to launching the new Teamwork feature. Please review the changes, as by continuing to use Readymag you automatically accept them. Have a great day!</div>\n\t\t\t\t\t    <div class="learn-more agree-terms-button">I agree</div>\n\t\t\t\t\t</div>\n\t\t\t\t\t\x3c!-- Special terms agree message end --\x3e\n\n\t\t\t\t\t<div class="wn-page" data-date="2015-09-03">\n\t\t\t\t\t    <div class="caption">What\'s new</div>\n\t\t\t\t\t    <div class="date">Sep 3<span>rd</span></div>\n\t\t\t\t\t    <div class="picture"></div>\n\t\t\t\t\t\t<div class="text">Introducing<br/>Teamwork</div>\n\t\t\t\t\t    <a class="learn-more" href="https://readymag.com/p683180/" target="_blank">Learn More</a>\n\t\t\t\t\t</div>\n\n\t\t\t\t\t<div class="wn-page" data-date="2015-10-09">\n\t\t\t\t\t    <div class="caption">What\'s new</div>\n\t\t\t\t\t    <div class="date">Oct 9<span>th</span></div>\n\t\t\t\t\t    <div class="picture"></div>\n\t\t\t\t\t\t<div class="text">Introducing<br/>Hotspot</div>\n\t\t\t\t\t    <a class="learn-more" href="https://readymag.com/p921047/" target="_blank">Learn More</a>\n\t\t\t\t\t</div>\n\n\t\t\t\t\t<div class="wn-page" data-date="2015-11-18">\n\t\t\t\t\t    <div class="caption">What\'s new</div>\n\t\t\t\t\t    <div class="date">Nov 18<span>th</span></div>\n\t\t\t\t\t    <div class="picture"></div>\n\t\t\t\t\t\t<div class="text">Introducing<br/>5 Tiny Features</div>\n\t\t\t\t\t    <a class="learn-more" href="https://readymag.com/p1016246/" target="_blank">Learn More</a>\n\t\t\t\t\t</div>\n\t\t\t\t\t<div class="wn-page" data-date="2016-01-20">\n\t\t\t\t\t    <div class="caption">What\'s new</div>\n\t\t\t\t\t    <div class="date">Jan 19<span>th</span></div>\n\t\t\t\t\t    <div class="picture"></div>\n\t\t\t\t\t\t<div class="text">Introducing<br/>Animations</div>\n\t\t\t\t\t    <a class="learn-more" href="http://animations.readymag.com/" target="_blank">Learn More</a>\n\t\t\t\t\t</div>\n\t\t\t\t\t<div class="wn-page" data-date="2016-04-12">\n\t\t\t\t\t    <div class="caption">What\'s new</div>\n\t\t\t\t\t    <div class="date">Apr 12<span>th</span></div>\n\t\t\t\t\t    <div class="picture"></div>\n\t\t\t\t\t    <a class="learn-more" href="https://readymag.com/p1351980/" target="_blank">Learn More</a>\n\t\t\t\t\t</div>\n\t\t\t\t\t<div class="wn-page" data-date="2016-08-04">\n\t\t\t\t\t    <div class="caption">What\'s new</div>\n\t\t\t\t\t    <div class="date">Aug 4<span>th</span></div>\n\t\t\t\t\t    <div class="picture"></div>\n\t\t\t\t\t    <a class="learn-more" href="https://readymag.com/p1617587/" target="_blank">Learn More</a>\n\t\t\t\t\t</div>\n\t\t\t\t\t<div class="wn-page" data-date="2016-09-29">\n\t\t\t\t\t    <div class="caption">What\'s new</div>\n\t\t\t\t\t    <div class="date">Sep 29<span>th</span></div>\n\t\t\t\t\t    <div class="picture"></div>\n\t\t\t\t\t    <a class="learn-more" href="https://readymag.com/p1730817/" target="_blank">Learn More</a>\n\t\t\t\t\t</div>\n\t\t\t\t\t<div class="wn-page" data-date="2016-12-01">\n\t\t\t\t\t    <div class="caption">What\'s new</div>\n\t\t\t\t\t    <div class="date">Dec 1<span>st</span></div>\n\t\t\t\t\t    <div class="picture"></div>\n\t\t\t\t\t    <a class="learn-more" href="https://readymag.com/p1921011/" target="_blank">Learn More</a>\n\t\t\t\t\t</div>\n\t\t\t\t\t<div class="wn-page" data-date="2017-02-07">\n\t\t\t\t\t    <div class="caption">What\'s new</div>\n\t\t\t\t\t    <div class="date">Feb 7<span>th</span></div>\n\t\t\t\t\t    <div class="picture"></div>\n\t\t\t\t\t    <a class="learn-more" href="https://readymag.com/p2117051/" target="_blank">Learn More</a>\n\t\t\t\t\t</div>\n\t\t\t\t\t<div class="wn-page" data-date="2017-05-03">\n\t\t\t\t\t    <div class="caption">What\'s new</div>\n\t\t\t\t\t    <div class="date">May 3<span>rd</span></div>\n\t\t\t\t\t    <div class="picture"></div>\n\t\t\t\t\t    <a class="learn-more" href="https://readymag.com/p2346155/" target="_blank">Learn More</a>\n\t\t\t\t\t</div>\n\t\t\t\t\t<div class="wn-page" data-date="2017-08-08">\n\t\t\t\t\t    <div class="caption">What\'s new</div>\n\t\t\t\t\t    <div class="date">August 8<span>th</span></div>\n\t\t\t\t\t    <div class="picture"></div>\n\t\t\t\t\t    <a class="learn-more" href="https://readymag.com/p2674515/" target="_blank">Learn More</a>\n\t\t\t\t\t</div>\n\t\t\t\t\t<div class="wn-page" data-date="2017-09-20">\n\t\t\t\t\t    <div class="caption">What\'s new</div>\n\t\t\t\t\t    <div class="date">Sep 20<span>th</span></div>\n\t\t\t\t\t    <div class="picture"></div>\n\t\t\t\t\t    <a class="learn-more" href="https://readymag.com/p2809932/" target="_blank">Learn More</a>\n\t\t\t\t\t</div>\n\t\t\t\t\t<div class="wn-page" data-date="2017-11-30">\n\t\t\t\t\t    <div class="caption">What\'s new</div>\n\t\t\t\t\t    <div class="date">Nov 30<span>th</span></div>\n\t\t\t\t\t    <div class="picture"></div>\n\t\t\t\t\t    <a class="learn-more" href="https://help.readymag.com/domains/" target="_blank">Learn More</a>\n\t\t\t\t\t</div>\n\t\t\t\t\t<div class="wn-page" data-date="2017-12-15">\n\t\t\t\t\t    <div class="caption">What\'s new</div>\n\t\t\t\t\t    <div class="date">Dec 15<span>th</span></div>\n\t\t\t\t\t    <div class="picture"></div>\n\t\t\t\t\t    <a class="learn-more" href="https://medium.com/@readymag/readymag-under-the-hood-faster-vertical-viewer-implementation-8615457fdf25" target="_blank">Learn More</a>\n\t\t\t\t\t</div>\n\t\t\t\t\t<div class="wn-page" data-date="2018-02-15">\n\t\t\t\t\t    <div class="caption">What\'s new</div>\n\t\t\t\t\t    <div class="date">Feb 15<span>th</span></div>\n\t\t\t\t\t    <div class="picture"></div>\n\t\t\t\t\t    <a class="learn-more" href="https://readymag.com/p3276335/" target="_blank">Learn More</a>\n\t\t\t\t\t</div>\n\t\t\t\t\t<div class="wn-page" data-date="2018-03-29">\n\t\t\t\t\t    <div class="caption">What\'s new</div>\n\t\t\t\t\t    <div class="date">Mar 29<span>th</span></div>\n\t\t\t\t\t    <div class="picture"></div>\n\t\t\t\t\t    <a class="learn-more" href="https://readymag.com/p3488378/" target="_blank">Learn More</a>\n\t\t\t\t\t</div>\n\t\t\t\t</div>\n\t\t\t\t<div class="close"></div>\n\t\t\t\t<div class="arrow up disabled"></div>\n\t\t\t\t<div class="arrow down"></div>\n\t\t\t</div>\n\t\t</div>\n\t</div>\n';
         return __p;
     }.apply(this, arguments));
 }, RM.templates["template-constructor-block-audio"] = function() {
@@ -1400,12 +1401,9 @@ Modernizr.addTest("retina", function() {
             this._sendFBGraphRequest(o), e.mag_domain ? (i = "http://" + e.mag_domain + "/", this._sendFBGraphRequest(i)) : e.user_domain && (s = "http://" + e.user_domain + "/" + e.mag_uri + "/", 
             this._sendFBGraphRequest(s));
             var r = e.pages;
-            if (0 != r.length) {
-                i || s || a + "/";
-                for (var l in r) {
-                    var c = a + "p" + (l = r[l]).num_id + "/";
-                    this._sendFBGraphRequest(c);
-                }
+            if (0 != r.length) for (var l in i || s || a + "/", r) {
+                var c = a + "p" + (l = r[l]).num_id + "/";
+                this._sendFBGraphRequest(c);
             }
         },
         simulateEvent: function(t, e) {
@@ -1532,13 +1530,19 @@ Modernizr.addTest("retina", function() {
             var e, i = /#{\s*?_\s*?}/, s = function(e, i, s) {
                 return t[s] = _.clone(i);
             }, n = function(n) {
-                var a, o, r, l, c, d, h, u, p = t[n], g = e[n];
-                h = p, u = g, _.isUndefined(h) || _.isNull(h) || _.isFunction(h) || _.isNull(u) || _.isDate(u) ? s(0, g, n) : (d = g, 
-                _.isString(d) && i.test(d) ? (r = p, l = g, c = n, _.isString(r), t[c] = l.replace(i, r)) : (a = p, 
-                o = g, _.isArray(a) || _.isArray(o) ? s(0, g, n) : _.isObject(p) && _.isObject(g) ? function(e, i, s) {
+                var a = t[n], o = e[n];
+                !function(t, e) {
+                    return _.isUndefined(t) || _.isNull(t) || _.isFunction(t) || _.isNull(e) || _.isDate(e);
+                }(a, o) ? function(t, e) {
+                    return _.isString(e) && i.test(e);
+                }(0, o) ? function(e, s, n) {
+                    _.isString(e), t[n] = s.replace(i, e);
+                }(a, o, n) : !function(t, e) {
+                    return _.isArray(t) || _.isArray(e);
+                }(a, o) && _.isObject(a) && _.isObject(o) ? function(e, i, s) {
                     if (!_.isObject(e) || !_.isObject(i)) throw new Error("Trying to combine an object with a non-object (" + s + ")");
                     t[s] = _.deepExtend(e, i);
-                }(p, g, n) : s(0, g, n)));
+                }(a, o, n) : s(0, o, n) : s(0, o, n);
             };
             return _.each(Array.prototype.slice.call(arguments, 1), function(t) {
                 e = t, Object.keys(e).forEach(n);
@@ -1664,28 +1668,44 @@ Modernizr.addTest("retina", function() {
         doBoundingBoxesIntersect: function(t, e) {
             return t && e && !(e.left > t.right || e.right < t.left || e.top > t.bottom || e.bottom < t.top);
         },
-        calcBoundingBox: function(e, i) {
-            var s = t.mathutils.calcRotatedBox(e), n = _.pluck(s, "x"), a = _.pluck(s, "y"), o = Math.min.apply(null, n), r = Math.max.apply(null, n), l = Math.min.apply(null, a), c = o, d = l, h = r - o, u = Math.max.apply(null, a) - l;
-            return i && ([ "n", "c", "s" ].indexOf(i) > -1 && (c = e.left), [ "w", "c", "e" ].indexOf(i) > -1 && (d = e.top)), 
-            {
-                bb_width: h,
-                bb_height: u,
-                bb_left: c,
-                bb_top: d
+        calcBoundingBox: function(e, i, s) {
+            var n = t.mathutils.calcRotatedBox(e), a = _.pluck(n, "x"), o = _.pluck(n, "y"), r = Math.min.apply(null, a), l = Math.max.apply(null, a), c = Math.min.apply(null, o), d = r, h = c, u = l - r, p = Math.max.apply(null, o) - c;
+            return i && ([ "n", "c", "s" ].indexOf(i) > -1 && (d = e.left), [ "w", "c", "e" ].indexOf(i) > -1 && (h = e.top)), 
+            s ? {
+                width: u,
+                height: p,
+                left: d,
+                top: h
+            } : {
+                bb_width: u,
+                bb_height: p,
+                bb_left: d,
+                bb_top: h
             };
         },
-        getBoundingBoxOfMany: function(t) {
-            var e = [], i = [];
-            _.each(t, function(t) {
-                e.push(t.left), e.push(t.right), i.push(t.top), i.push(t.bottom);
-            });
-            var s = {
-                top: Math.min.apply(null, i),
-                right: Math.max.apply(null, e),
-                bottom: Math.max.apply(null, i),
-                left: Math.min.apply(null, e)
+        boxToRect: function(t) {
+            return {
+                width: t.width,
+                height: t.height,
+                top: t.top,
+                bottom: t.top + t.height,
+                left: t.left,
+                right: t.left + t.width
             };
-            return s.width = s.right - s.left, s.height = s.bottom - s.top, s;
+        },
+        getBoundingBoxOfMany: function(e) {
+            var i = [], s = [];
+            _.each(e, function(e) {
+                var n = void 0 !== e.right ? _.extend({}, e) : t.mathutils.boxToRect(e);
+                i.push(n.left), i.push(n.right), s.push(n.top), s.push(n.bottom);
+            });
+            var n = {
+                top: Math.min.apply(null, s),
+                right: Math.max.apply(null, i),
+                bottom: Math.max.apply(null, s),
+                left: Math.min.apply(null, i)
+            };
+            return n.width = n.right - n.left, n.height = n.bottom - n.top, n;
         },
         calcRotatedBox: function(t) {
             var e = [], i = [ 0, 1, 1, 0 ], s = [ 0, 0, 1, 1 ], n = t.left + t.width / 2, a = t.top + t.height / 2, o = t.sinAngle, r = t.cosAngle;
@@ -1769,6 +1789,33 @@ Modernizr.addTest("retina", function() {
                 centerX: e.left + e.width / 2,
                 centerY: e.top + e.height / 2
             });
+        },
+        getResizedBoxNested: function(t, e, i, s) {
+            var n = i.width / e.width, a = i.height / e.height;
+            return n = "height" === s ? a : n, a = "width" === s ? n : a, {
+                left: (t.left - e.left) * n + i.left,
+                top: (t.top - e.top) * a + i.top,
+                width: t.width * n,
+                height: t.height * a
+            };
+        },
+        getResizedBoxByBB: function(t, e, i) {
+            var s = i.left + i.width / 2, n = i.top + i.height / 2, a = i.width / e.width, o = i.height / e.height, r = t.width * a, l = t.height * o;
+            return {
+                left: s - r / 2,
+                top: n - l / 2,
+                width: r,
+                height: l
+            };
+        },
+        getBoxLimits: function(t, e) {
+            var i = t.width / t.height > 1, s = i ? e.minheight / t.height : e.minwidth / t.width, n = i ? e.maxwidth / t.width : e.maxheight / t.height;
+            return {
+                minwidth: e.minwidth ? Math.round(t.width * s) : 1,
+                minheight: e.minheight ? Math.round(t.height * s) : 1,
+                maxwidth: e.maxwidth ? Math.round(t.width * n) : 1 / 0,
+                maxheight: e.maxheight ? Math.round(t.height * n) : 1 / 0
+            };
         }
     };
 }(RM), "undefined" == typeof RM && (RM = {}), function(t) {
@@ -2773,12 +2820,12 @@ Modernizr.addTest("retina", function() {
     location.origin === t.constants.readymag_auth_host && t.classes.extendAnalyticsUsers ? t.classes.Analytics = Backbone.Model.extend(t.classes.extendAnalyticsUsers) : t.classes.extendAnalyticsPublic ? t.classes.Analytics = Backbone.Model.extend(t.classes.extendAnalyticsPublic) : alert("Analytics initialization error!");
 }(RM), function() {
     "use strict";
-    var t = this, e = "undefined" != typeof require, i = t._;
-    if (void 0 === i) {
-        if (!e) throw new Error("global widget requires underscore, see http://underscorejs.org");
-        i = require("underscore");
+    var t = "undefined" != typeof require, e = this._;
+    if (void 0 === e) {
+        if (!t) throw new Error("global widget requires underscore, see http://underscorejs.org");
+        e = require("underscore");
     }
-    var s = [ {
+    var i = [ {
         name: "default",
         width: 1024,
         min_height: 672,
@@ -2800,30 +2847,31 @@ Modernizr.addTest("retina", function() {
         max_height: 201600,
         caption: "Phone Portrait",
         shortcut: "3"
-    } ], n = [ "x", "y", "w", "h", "z", "hidden", "angle", "flip_h", "flip_v", "pack_id", "fixed_position", "is_full_width", "sticked", "animation" ], a = {
-        background: i.union([ "color", "opacity", "selectedType", "picture" ], n),
-        picture: i.union([ "picture", "cropW", "cropH", "cropX", "cropY", "originalW", "originalH", "ratio", "scale", "pic_opacity", "pic_color", "border_size", "border_color", "border_radius", "border_radius_max", "opacity", "anchor_link_pos" ], n),
-        slideshow: i.union([ "images_h", "captions_h" ], n),
-        text: i.union([ "column_count", "column_gap", "bg_color", "bg_opacity" ], n),
-        shape: i.union([ "rasterUrl", "raster2xUrl", "borders", "weight", "anchor_link_pos", "bg_color" ], n),
-        button: i.union([ "anchor_link_pos" ], n),
-        hotspot: i.chain().union([ "borders", "weight", "anchor_link_pos" ], n).without("w", "h").value(),
-        form: i.union([ "layout", "style", "style-colored-button-default", "style-colored-button-hover", "style-colored-fields", "style-outlined-button-default", "style-outlined-button-hover", "style-outlined-fields", "style-underlined-button-default", "style-underlined-button-hover", "style-underlined-fields" ], n)
-    }, o = i.map(s, function(t) {
+    } ], s = [ "x", "y", "w", "h", "z", "hidden", "angle", "flip_h", "flip_v", "pack_id", "fixed_position", "is_full_width", "sticked", "animation" ], n = {
+        background: e.union([ "color", "opacity", "selectedType", "picture" ], s),
+        picture: e.union([ "picture", "cropW", "cropH", "cropX", "cropY", "originalW", "originalH", "ratio", "scale", "pic_opacity", "pic_color", "border_size", "border_color", "border_radius", "border_radius_max", "opacity", "anchor_link_pos" ], s),
+        slideshow: e.union([ "images_h", "captions_h" ], s),
+        text: e.union([ "column_count", "column_gap", "bg_color", "bg_opacity" ], s),
+        shape: e.union([ "rasterUrl", "raster2xUrl", "borders", "weight", "anchor_link_pos", "bg_color" ], s),
+        button: e.union([ "anchor_link_pos" ], s),
+        hotspot: e.chain().union([ "borders", "weight", "anchor_link_pos" ], s).without("w", "h").value(),
+        form: e.union([ "layout", "style", "style-colored-button-default", "style-colored-button-hover", "style-colored-fields", "style-outlined-button-default", "style-outlined-button-hover", "style-outlined-fields", "style-underlined-button-default", "style-underlined-button-hover", "style-underlined-fields" ], s)
+    }, a = e.map(i, function(t) {
         return "viewport_" + t.name;
-    }), r = i.without(o, "viewport_default"), l = function(t) {
-        return a[t] || n;
+    }), o = e.without(a, "viewport_default"), r = function(t) {
+        return n[t] || s;
     };
     "undefined" != typeof exports ? "undefined" != typeof module && module.exports && (exports = module.exports = {
-        viewports: s,
-        viewport_fields_common: n,
-        viewport_fields: a,
-        viewport_listall: o,
-        viewport_list: r,
-        widgetViewportFields: l
-    }) : t.RM ? (t.RM.viewports = s, t.RM.viewport_fields_common = n, t.RM.viewport_fields = a, t.RM.viewport_listall = o, 
-    t.RM.viewport_list = r, t.RM.widgetViewportFields = l) : (t.viewports = s, t.viewport_fields_common = n, 
-    t.viewport_fields = a, t.viewport_listall = o, t.viewport_list = r, t.widgetViewportFields = l);
+        viewports: i,
+        viewport_fields_common: s,
+        viewport_fields: n,
+        viewport_listall: a,
+        viewport_list: o,
+        widgetViewportFields: r
+    }) : this.RM ? (this.RM.viewports = i, this.RM.viewport_fields_common = s, this.RM.viewport_fields = n, 
+    this.RM.viewport_listall = a, this.RM.viewport_list = o, this.RM.widgetViewportFields = r) : (this.viewports = i, 
+    this.viewport_fields_common = s, this.viewport_fields = n, this.viewport_listall = a, this.viewport_list = o, 
+    this.widgetViewportFields = r);
 }.call(this);
 
 var googleMapsAPICallbacks = [], facebookAPICallbacks = [], twitterAPICallbacks = [], mailchimpAPICallbacks = [];
@@ -2850,7 +2898,7 @@ var googleMapsAPICallbacks = [], facebookAPICallbacks = [], twitterAPICallbacks 
             var i = t.constants.FACEBOOK_APP_ID || "";
             if ("function" == typeof e) {
                 if (t.initutils.isFacebookInited) return e();
-                var s, n, a, o;
+                var s, n, a, o, r;
                 facebookAPICallbacks.push(e), $("#fb-root").length || $("body").prepend($('<div id="fb-root"></div>')), 
                 window.fbAsyncInit = function() {
                     FB.init({
@@ -2860,8 +2908,8 @@ var googleMapsAPICallbacks = [], facebookAPICallbacks = [], twitterAPICallbacks 
                     }), _.each(facebookAPICallbacks, function(t) {
                         _.isFunction(t) && t();
                     }), t.initutils.isFacebookInited = !0;
-                }, s = document, n = "facebook-jssdk", o = s.getElementsByTagName("script")[0], s.getElementById(n) || ((a = s.createElement("script")).id = n, 
-                a.src = t.utils.selectProtocol("//connect.facebook.net/en_US/sdk.js"), o.parentNode.insertBefore(a, o));
+                }, s = document, n = "script", a = "facebook-jssdk", r = s.getElementsByTagName(n)[0], s.getElementById(a) || ((o = s.createElement(n)).id = a, 
+                o.src = t.utils.selectProtocol("//connect.facebook.net/en_US/sdk.js"), r.parentNode.insertBefore(o, r));
             }
         },
         initTwitterAPI: function(e) {
@@ -3160,8 +3208,8 @@ var googleMapsAPICallbacks = [], facebookAPICallbacks = [], twitterAPICallbacks 
                 i(o.width(), o.height());
             }
             t = $(t), r.html(t), r.find("script").each(function() {
-                var t, e = this;
-                e.src && e.text && ((t = document.createElement("script")).text = e.text, e.text = "", $(t).insertAfter($(e)));
+                var t;
+                this.src && this.text && ((t = document.createElement("script")).text = this.text, this.text = "", $(t).insertAfter($(this)));
             }), postscribe(e, r[0].innerHTML, {
                 done: function() {
                     return i(null, null);
@@ -3226,8 +3274,7 @@ var googleMapsAPICallbacks = [], facebookAPICallbacks = [], twitterAPICallbacks 
             }
         },
         matchCode: function(t, i) {
-            t = (t || "").trim();
-            for (var s in this.matchers) {
+            for (var s in t = (t || "").trim(), this.matchers) {
                 var n = this.matchers[s];
                 if (e.isFunction(n)) return n(t, i) ? s : this.defaultType;
                 for (var a in n) {
@@ -3240,90 +3287,100 @@ var googleMapsAPICallbacks = [], facebookAPICallbacks = [], twitterAPICallbacks 
         }
     };
     "undefined" != typeof exports ? "undefined" != typeof module && module.exports && (exports = module.exports = i) : this.RM ? this.RM.embedMatcher = i : this.embedMatcher = i;
-}.call(this), "undefined" == typeof RM && (RM = {}), RM.videoutils = {
-    getVideoAspectFromPoster: function(t, e) {
-        var i = {
-            abort: function() {
-                d.onload = null, d.onerror = null;
-            }
-        }, s = {
-            aspect_poster: null,
-            aspect_real: null
-        };
-        if (!t) return e(s), i;
-        var n, a, o, r, l, c, d = new Image();
-        return d.onload = function() {
-            l = d.width, c = d.height, o = 200, r = Math.floor(o * (c / l)), n = $('<canvas id="qqq" width="' + o + '" height="' + r + '"></canvas>').css("visibility", "hidden").appendTo("body"), 
-            (a = n[0].getContext("2d")).drawImage(d, 0, 0, o, r);
-            var t, i, h = a.getImageData(0, 0, o, r), u = 0, p = 0, g = 0, m = 0;
-            for (i = 0; i <= r / 2; i++) if (w(i, "row").isContrast) {
-                (i <= 1 || w(i - 1, "row").isBlack || w(i - 2, "row").isBlack) && (u = i);
-                break;
-            }
-            for (i = r - 1; i > r / 2; i--) if (w(i, "row").isContrast) {
-                (i >= r - 2 || w(i + 1, "row").isBlack || w(i + 2, "row").isBlack) && (p = r - 1 - i);
-                break;
-            }
-            var f = Math.max(u, p), v = 0;
-            if (!f) {
-                for (t = 0; t <= o / 2; t++) if (w(t, "column").isContrast) {
-                    (t <= 1 || w(t - 1, "column").isBlack || w(t - 2, "column").isBlack) && (g = t);
-                    break;
+}.call(this), "undefined" == typeof RM && (RM = {}), function(t) {
+    t.videoutils = {
+        getVideoAspectFromPoster: function(t, e) {
+            var i = {
+                abort: function() {
+                    d.onload = null, d.onerror = null;
                 }
-                for (t = o - 1; t > o / 2; t--) if (w(t, "column").isContrast) {
-                    (t >= o - 2 || w(t + 1, "column").isBlack || w(t + 2, "column").isBlack) && (m = o - 1 - t);
-                    break;
+            }, s = {
+                aspect_poster: null,
+                aspect_real: null
+            };
+            if (!t) return e(s), i;
+            var n, a, o, r, l, c, d = new Image();
+            return d.onload = function() {
+                l = d.width, c = d.height, o = 200, r = Math.floor(o * (c / l)), n = $('<canvas id="qqq" width="' + o + '" height="' + r + '"></canvas>').css("visibility", "hidden").appendTo("body"), 
+                (a = n[0].getContext("2d")).drawImage(d, 0, 0, o, r);
+                var t, i, h = a.getImageData(0, 0, o, r), u = 0, p = 0, g = 0, m = 0;
+                for (i = 0; i <= r / 2; i++) {
+                    if (w(i, "row").isContrast) {
+                        (i <= 1 || w(i - 1, "row").isBlack || w(i - 2, "row").isBlack) && (u = i);
+                        break;
+                    }
                 }
-                v = Math.max(m, g);
-            }
-            f > r / 3 && (f = 0), v > o / 3 && (v = 0);
-            var _ = l / c;
-            function w(t, e) {
-                var i, s, n, a, l, c = "row" == e ? o : r, d = 0, u = 0;
-                for (i = 0; i < c; i++) s = ("row" == e ? t * o + i : i * o + t) << 2, d += (n = h.data[s]) + (a = h.data[s + 1]) + (l = h.data[s + 2]), 
-                n < 20 && a < 20 && l < 20 && u++;
-                return {
-                    isBlack: (d /= 3 * c) < 5 && c - u < 3,
-                    isContrast: u < c / 2
-                };
-            }
-            f ? _ = o / (r - 2 * f) : v && (_ = (o - 2 * v) / r), n.remove(), s.aspect_poster = l / c, s.aspect_real = _, 
-            e(s);
-        }, d.onerror = function() {
-            e(s);
-        }, d.src = "/api/proxy/?url=" + encodeURIComponent(t), i;
-    },
-    setVideoPosition: function(t) {
-        if (t.aspect_poster && t.$media && t.$media.length) {
-            var e = t.$container.css("width"), i = t.$container.css("height");
-            if (/px/.test(e + i)) e = parseInt(e), i = parseInt(i); else {
-                if (!t.mag) return;
-                var s = t.mag.getContainerSizeCached();
-                e = s.width, i = s.height;
-            }
-            var n, a, o = t.aspect_poster, r = t.aspect_real || o, l = t.controls_remove ? 5 : 0, c = e + 2 * l, d = i + 2 * l, h = c, u = d;
-            if (o && (c / d > r ? a = (n = c) / r : n = (a = d) * r, o < r ? u = (h = n) / o : h = (u = a) * o), 
-            "vimeo" == t.provider.toLowerCase() && t.controls_remove) {
-                var p = (u - d) / 2;
-                if (v = 50, minRightPadding = 46, diffBottom = v - p, diffRight = minRightPadding - (h - c) / 2, diffBottom > 0 || diffRight > 0) {
-                    var g = (u + 2 * diffBottom) / u, m = (h + 2 * diffRight) / h, f = Math.max(g, m);
-                    h *= f, u *= f;
+                for (i = r - 1; i > r / 2; i--) {
+                    if (w(i, "row").isContrast) {
+                        (i >= r - 2 || w(i + 1, "row").isBlack || w(i + 2, "row").isBlack) && (p = r - 1 - i);
+                        break;
+                    }
                 }
+                var f = Math.max(u, p), v = 0;
+                if (!f) {
+                    for (t = 0; t <= o / 2; t++) {
+                        if (w(t, "column").isContrast) {
+                            (t <= 1 || w(t - 1, "column").isBlack || w(t - 2, "column").isBlack) && (g = t);
+                            break;
+                        }
+                    }
+                    for (t = o - 1; t > o / 2; t--) {
+                        if (w(t, "column").isContrast) {
+                            (t >= o - 2 || w(t + 1, "column").isBlack || w(t + 2, "column").isBlack) && (m = o - 1 - t);
+                            break;
+                        }
+                    }
+                    v = Math.max(m, g);
+                }
+                f > r / 3 && (f = 0), v > o / 3 && (v = 0);
+                var _ = l / c;
+                function w(t, e) {
+                    var i, s, n, a, l, c = "row" == e ? o : r, d = 0, u = 0;
+                    for (i = 0; i < c; i++) s = ("row" == e ? t * o + i : i * o + t) << 2, d += (n = h.data[s]) + (a = h.data[s + 1]) + (l = h.data[s + 2]), 
+                    n < 20 && a < 20 && l < 20 && u++;
+                    return {
+                        isBlack: (d /= 3 * c) < 5 && c - u < 3,
+                        isContrast: u < c / 2
+                    };
+                }
+                f ? _ = o / (r - 2 * f) : v && (_ = (o - 2 * v) / r), n.remove(), s.aspect_poster = l / c, s.aspect_real = _, 
+                e(s);
+            }, d.onerror = function() {
+                e(s);
+            }, d.src = "/api/proxy/?url=" + encodeURIComponent(t), i;
+        },
+        setVideoPosition: function(t) {
+            if (t.aspect_poster && t.$media && t.$media.length) {
+                var e = t.$container.css("width"), i = t.$container.css("height");
+                if (/px/.test(e + i)) e = parseInt(e), i = parseInt(i); else {
+                    if (!t.mag) return;
+                    var s = t.mag.getContainerSizeCached();
+                    e = s.width, i = s.height;
+                }
+                var n, a, o = t.aspect_poster, r = t.aspect_real || o, l = t.controls_remove ? 5 : 0, c = e + 2 * l, d = i + 2 * l, h = c, u = d;
+                if (o) c / d > r ? a = (n = c) / r : n = (a = d) * r, o < r ? u = (h = n) / o : h = (u = a) * o;
+                if ("vimeo" == t.provider.toLowerCase() && t.controls_remove) {
+                    var p = (u - d) / 2;
+                    if (v = 50, minRightPadding = 46, diffBottom = v - p, diffRight = minRightPadding - (h - c) / 2, diffBottom > 0 || diffRight > 0) {
+                        var g = (u + 2 * diffBottom) / u, m = (h + 2 * diffRight) / h, f = Math.max(g, m);
+                        h *= f, u *= f;
+                    }
+                }
+                if ("youtube" == t.provider.toLowerCase() && t.controls_remove) {
+                    var v = 103, _ = v - (p = (u - d) / 2);
+                    _ > 0 && (h = (u += 2 * _) * o);
+                }
+                var w = -l - (h - c) / 2, y = -l - (u - d) / 2;
+                t.$media.css({
+                    left: w,
+                    top: y,
+                    width: h,
+                    height: u
+                });
             }
-            if ("youtube" == t.provider.toLowerCase() && t.controls_remove) {
-                var v = 103, _ = v - (p = (u - d) / 2);
-                _ > 0 && (h = (u += 2 * _) * o);
-            }
-            var w = -l - (h - c) / 2, y = -l - (u - d) / 2;
-            t.$media.css({
-                left: w,
-                top: y,
-                width: h,
-                height: u
-            });
         }
-    }
-}, "undefined" == typeof RM && (RM = {}), function(t) {
+    };
+}(RM), "undefined" == typeof RM && (RM = {}), function(t) {
     t.animationutils = {
         LOOP_TYPES: {
             swing: "swing",
@@ -3608,7 +3665,7 @@ var googleMapsAPICallbacks = [], facebookAPICallbacks = [], twitterAPICallbacks 
     "use strict";
     t.classes.ServicePage = Backbone.View.extend({
         TEMPLATES: {
-            "404": "template-common-404",
+            404: "template-common-404",
             "mag-suspended": "template-common-mag-suspended",
             "user-suspended": "template-common-user-suspended",
             "domain-error": "template-common-domain-errors"
@@ -4802,16 +4859,16 @@ var googleMapsAPICallbacks = [], facebookAPICallbacks = [], twitterAPICallbacks 
             this.hasFixedWidgets && !this.retargetScroll && "horizontal" == this.viewerType && Modernizr.isdesktop && (this.retargetScroll = window.RetargetMouseScroll && window.RetargetMouseScroll(this.$fixedPositionContainer.get(0), this.$scrollWrapper.get(0))), 
             this.lastViewportUsedForWidgetsCreation = e;
         },
-        getWidgetViewportData: function(i, s) {
-            var n = _.clone(i), a = {}, o = {};
-            return "default" != s && i["viewport_" + s] && (_.each(t.viewport_fields[i.type] || t.viewport_fields_common, function(s) {
-                if (("shape" != i.type || "borders" != s && "weight" != s && "bg_color" != s) && ("background" != i.type || "picture" != s) && (a[s] = e, 
-                t.globalwidgets.isGlobalKey(s))) {
-                    var n = t.globalwidgets.getGlobalPrefixedKey(s);
-                    a[n] = e;
+        getWidgetViewportData: function(e, i) {
+            var s = _.clone(e), n = {}, a = {};
+            return "default" != i && e["viewport_" + i] && (_.each(t.viewport_fields[e.type] || t.viewport_fields_common, function(i) {
+                if (("shape" != e.type || "borders" != i && "weight" != i && "bg_color" != i) && ("background" != e.type || "picture" != i) && (n[i] = void 0, 
+                t.globalwidgets.isGlobalKey(i))) {
+                    var s = t.globalwidgets.getGlobalPrefixedKey(i);
+                    n[s] = void 0;
                 }
-            }), _.extend(n, a, _.omit(i["viewport_" + s], [ "_id", "modelType" ]))), i.is_global && (o.props = i.is_above ? [ "hidden" ] : null, 
-            t.globalwidgets.fillUniqueValues(n, this._id, o)), n;
+            }), _.extend(s, n, _.omit(e["viewport_" + i], [ "_id", "modelType" ]))), e.is_global && (a.props = e.is_above ? [ "hidden" ] : null, 
+            t.globalwidgets.fillUniqueValues(s, this._id, a)), s;
         },
         getWidgetById: function(t) {
             return _.findWhere(this.widgets, {
@@ -4927,40 +4984,40 @@ var googleMapsAPICallbacks = [], facebookAPICallbacks = [], twitterAPICallbacks 
             }, 0);
             return t.viewports[n].name;
         },
-        onResize: function(i) {
-            if (i = i || {}, this.shown || "horizontal" != this.viewerType) {
-                var s = this.mag.getContainerSizeCached(), n = this.mag.getViewportSetting("width", this.pageViewport), a = this.mag.getScale(this.pageViewport), o = this["viewport_" + this.pageViewport] && this["viewport_" + this.pageViewport].height || this.height, r = {
-                    width: n,
-                    height: o,
-                    scaledWidth: Math.round(n * a),
-                    scaledHeight: Math.round(o * a),
-                    scale: a
-                }, l = Math.min(r.scaledWidth, s.width), c = r.scaledHeight, d = Math.max((s.height - c) / 2, 0), h = Math.max((s.width - l) / 2, 0), u = {
-                    width: r.width,
-                    height: r.height,
-                    top: d,
-                    left: h
+        onResize: function(e) {
+            if (e = e || {}, this.shown || "horizontal" != this.viewerType) {
+                var i = this.mag.getContainerSizeCached(), s = this.mag.getViewportSetting("width", this.pageViewport), n = this.mag.getScale(this.pageViewport), a = this["viewport_" + this.pageViewport] && this["viewport_" + this.pageViewport].height || this.height, o = {
+                    width: s,
+                    height: a,
+                    scaledWidth: Math.round(s * n),
+                    scaledHeight: Math.round(a * n),
+                    scale: n
+                }, r = Math.min(o.scaledWidth, i.width), l = o.scaledHeight, c = Math.max((i.height - l) / 2, 0), d = Math.max((i.width - r) / 2, 0), h = {
+                    width: o.width,
+                    height: o.height,
+                    top: c,
+                    left: d
                 };
-                return a >= 1 && t.scale.isAllowed() && t.scale.isZoom() && (u.zoom = a, u.left = 0), this.$content.removeAttr("style"), 
-                this.$content.css(u), this.contentPosition = {
-                    left: h,
-                    top: d
-                }, 1 === t.scale.normalize(a, "transform") ? (t.utils.applyTransform(this.$content, ""), r.scale = 1) : t.utils.applyTransform(this.$content, "scale(" + r.scale + ")"), 
-                this.contentHeight = r.height, this.pageHeight = Math.max(s.height, r.scaledHeight), this.pageBgHeight = s.height, 
-                this.pageWidth = r.width, "vertical" == this.viewerType && this.isStickyVerticalViewer && this.$el.css({
+                return n >= 1 && t.scale.isAllowed() && t.scale.isZoom() && (h.zoom = n, h.left = 0), this.$content.removeAttr("style"), 
+                this.$content.css(h), this.contentPosition = {
+                    left: d,
+                    top: c
+                }, 1 === t.scale.normalize(n, "transform") ? (t.utils.applyTransform(this.$content, ""), o.scale = 1) : t.utils.applyTransform(this.$content, "scale(" + o.scale + ")"), 
+                this.contentHeight = o.height, this.pageHeight = Math.max(i.height, o.scaledHeight), this.pageBgHeight = i.height, 
+                this.pageWidth = o.width, "vertical" == this.viewerType && this.isStickyVerticalViewer && this.$el.css({
                     height: this.pageHeight,
-                    top: i.absolutePosition
-                }), this.scale = a, this.$contentBounds.css({
-                    width: s.width,
+                    top: e.absolutePosition
+                }), this.scale = n, this.$contentBounds.css({
+                    width: i.width,
                     height: this.pageHeight
-                }), this.prevScale != e && this.prevScale != this.scale && (this.animations && this.animations.updateTimelines(), 
+                }), void 0 != this.prevScale && this.prevScale != this.scale && (this.animations && this.animations.updateTimelines(), 
                 t.scale.isOn(this.scale) && this.animations && (this.animations.resetStarted(), this.animations.start.__debounced())), 
                 this.animations && this.animations.onResize(), this.trigger("resize", {
-                    containerSize: s,
+                    containerSize: i,
                     contentPosition: this.contentPosition
-                }), this.scrollable = c - this.mag.SCROLLABLE_TRESHOLD > s.height, this.mag.recalcBottomArrowState(this), 
-                this.visibleWidgetsCoords = this.visibleWidgetsCoords || {}, this.visibleWidgetsCoords.top = -d, this.visibleWidgetsCoords.bottom = -d + s.height, 
-                this.visibleWidgetsCoords.scale = a, this.resizeLQBackground(), this.prevScale = this.scale, this.pageHeight;
+                }), this.scrollable = l - this.mag.SCROLLABLE_TRESHOLD > i.height, this.mag.recalcBottomArrowState(this), 
+                this.visibleWidgetsCoords = this.visibleWidgetsCoords || {}, this.visibleWidgetsCoords.top = -c, this.visibleWidgetsCoords.bottom = -c + i.height, 
+                this.visibleWidgetsCoords.scale = n, this.resizeLQBackground(), this.prevScale = this.scale, this.pageHeight;
             }
         },
         onScroll: function() {
@@ -5933,10 +5990,14 @@ var googleMapsAPICallbacks = [], facebookAPICallbacks = [], twitterAPICallbacks 
         initialize: function(e, i) {
             _.bindAll(this), e || (e = {}), _.defaults(e, {
                 pages: []
-            });
+            }), this.hasWidgetsWithVerticalOnscrollAnimation = !1;
             var s = _(e.pages).chain().reduce(function(t, e) {
                 return t.concat(e.wids);
-            }, []).filter({
+            }, []).each(function(t) {
+                t.animation && "scroll" === t.animation.type && t.animation.steps && _.any(t.animation.steps, function(t) {
+                    return t.dy;
+                }.bind(this)) && (this.hasWidgetsWithVerticalOnscrollAnimation = !0);
+            }.bind(this)).filter({
                 is_global: !0
             }).value(), n = _(s).filter(function(t) {
                 return !t.is_above;
@@ -5976,7 +6037,7 @@ var googleMapsAPICallbacks = [], facebookAPICallbacks = [], twitterAPICallbacks 
                 slidein: !1
             };
             (i = _.extend(i, this.model.get("opts"))).viewertype = t.screenshot ? "horizontal" : i.viewertype, (!Modernizr.isdesktop || this.isPreview && "default" !== e) && (i.slidein = !1), 
-            "vertical" === i.viewertype && (Modernizr.isdesktop ? this.isStickyVerticalViewer = !i.slidein && !this.isPreview : (this.isStickyVerticalViewer = Modernizr.csspositionsticky, 
+            "vertical" === i.viewertype && (Modernizr.isdesktop ? this.isStickyVerticalViewer = !i.slidein && !this.isPreview && !this.hasWidgetsWithVerticalOnscrollAnimation : (this.isStickyVerticalViewer = Modernizr.csspositionsticky, 
             this.isStickyVerticalViewer || (i.viewertype = "horizontal", this.pages.length > 1 && (i.arrows = !0)))), 
             i.sharebutton = i.sharebutton && !this.isPreview && !!this.published && !this.is_private, i.pagecounter = i.pagecounter && !this.isPreview && this.pages.length > 1, 
             i.endpage = i.endpage && !this.isPreview && !!this.published, this.model.user && this.model.user.get && "540dc7a3a5c9259a383b910b" == this.model.user.get("_id") && (i = _.extend(i, {
@@ -6397,21 +6458,21 @@ var googleMapsAPICallbacks = [], facebookAPICallbacks = [], twitterAPICallbacks 
             _.isFunction(this._resetUrlStringTimeoutFunc) && this._resetUrlStringTimeoutFunc(), this.pauseWidgetsLoadingOnScroll();
             var t = this.findPageOnCurrentMagScroll({
                 pageStartsOnBottom: this.isStickyVerticalViewer && !Modernizr.isdesktop
-            }), i = this.getScrollParams(t);
-            if (this.lastPageScroll = i.pageScroll, this.lastPageScrollPercent = i.pageScrollPercent, this.showPage(t.page.num, i), 
-            this.finalPage && !this.isStickyVerticalViewer && (t.finalPageScroll != e ? this.finalPage.scrollOnVerticalMode(t.finalPageScroll) : this.finalPage.resetScrollOnVerticalMode()), 
+            }), e = this.getScrollParams(t);
+            if (this.lastPageScroll = e.pageScroll, this.lastPageScrollPercent = e.pageScrollPercent, this.showPage(t.page.num, e), 
+            this.finalPage && !this.isStickyVerticalViewer && (void 0 != t.finalPageScroll ? this.finalPage.scrollOnVerticalMode(t.finalPageScroll) : this.finalPage.resetScrollOnVerticalMode()), 
             this.aboveGlobalAnimations && this.aboveGlobalAnimations.onScroll({
-                forceApply: !this.isStickyVerticalViewer,
+                forceApply: !0,
                 scroll: this.getScroll()
             }), this.finalPage) {
-                var s = t.finalPageShown;
-                s != !!this.lastFinalPageState && this.trigger(s ? "finalPageShown" : "finalPageHidden"), this.lastFinalPageState = s;
+                var i = t.finalPageShown;
+                i != !!this.lastFinalPageState && this.trigger(i ? "finalPageShown" : "finalPageHidden"), this.lastFinalPageState = i;
             }
             if (this.$bottomArrow && +this.magOpenTime + 2e3 < +new Date()) {
                 this.$bottomArrow.addClass("offscreen");
-                var n = this.$bottomArrow;
+                var s = this.$bottomArrow;
                 delete this.$bottomArrow, setTimeout(function() {
-                    n.remove();
+                    s.remove();
                 }, 400);
             }
         },
@@ -6539,56 +6600,58 @@ var googleMapsAPICallbacks = [], facebookAPICallbacks = [], twitterAPICallbacks 
                 });
             }
         },
-        showPage: function(t, i) {
-            i = i || {}, this.active || this.render();
-            var s = this.getPage(t), n = this.currentPage, a = s && this.getPage(s.num + 1), o = this;
-            s && !this.aboveGlobalWidgetsRendered && this.renderAboveGlobalWidgets(s), this.isStickyVerticalViewer ? this.redrawAboveGlobalWidgets() : i.nextPageVisible || "horizontal" === this.viewOpts.viewertype ? this.redrawAboveGlobalWidgets(s, a, i.slideInNextPageScroll || i.nextPageScroll, i.animation) : s ? this.redrawAboveGlobalWidgets(s) : n && this.redrawAboveGlobalWidgets.__debounced(), 
-            "vertical" == this.viewOpts.viewertype && (i.animation = !1, s && s.scrollOnVerticalMode(i.pageScroll || 0), 
-            s && a && i.nextPageScroll != e && (a.scrollOnVerticalMode(i.nextPageScroll), this.isStickyVerticalViewer || (i.nextPageVisible ? a.start() : a.stop())), 
-            s && i.nextPageBlackout != e && this.$pages_blackout.css({
-                display: a ? "block" : "none",
-                opacity: i.nextPageBlackout,
-                "z-index": s.getPageZIndex()
+        showPage: function(t, e) {
+            e = e || {}, this.active || this.render();
+            var i = this.getPage(t), s = this.currentPage, n = i && this.getPage(i.num + 1), a = this;
+            i && !this.aboveGlobalWidgetsRendered && this.renderAboveGlobalWidgets(i), this.isStickyVerticalViewer ? this.redrawAboveGlobalWidgets() : e.nextPageVisible || "horizontal" === this.viewOpts.viewertype ? this.redrawAboveGlobalWidgets(i, n, e.slideInNextPageScroll || e.nextPageScroll, e.animation) : i ? this.redrawAboveGlobalWidgets(i) : s && this.redrawAboveGlobalWidgets.__debounced(), 
+            "vertical" == this.viewOpts.viewertype && (e.animation = !1, i && i.scrollOnVerticalMode(e.pageScroll || 0), 
+            i && n && void 0 != e.nextPageScroll && (n.scrollOnVerticalMode(e.nextPageScroll), this.isStickyVerticalViewer || (e.nextPageVisible ? n.start() : n.stop())), 
+            i && void 0 != e.nextPageBlackout && this.$pages_blackout.css({
+                display: n ? "block" : "none",
+                opacity: e.nextPageBlackout,
+                "z-index": i.getPageZIndex()
             }));
-            var r = !this.currentPage;
-            if (!r && (t == this.currentPage.num || t == this.currentPage.uri)) return !1;
-            if (!s) return 1 != t && this.router.onError(), !1;
-            if (n) if ("horizontal" == this.viewOpts.viewertype || this.isStickyVerticalViewer) n.stop(); else {
-                a == n && i.nextPageVisible || n.stop();
-                var l = n && this.getPage(n.num + 1);
-                l && !(l == s || l == a && i.nextPageVisible) && l.stop();
-            } else i.animation = !1;
-            this.pauseLoading("page-change-animation"), this.currentPage = s, n && n.resetWaitForAnimationEnd(), 
-            clearInterval(this.showPageCompleteInterval), this.$pages_container.toggleClass("disable-transitions", !i.animation), 
-            i.animation && (this.viewOpts.slidein && n && n.num > s.num ? n.waitForAnimationEnd(p) : s.waitForAnimationEnd(p)), 
-            this.direction = !n || n.num < s.num ? "forward" : "backward";
-            for (var c = s.num - ("forward" == this.direction ? this.PRELOAD_COUNT.backward : this.PRELOAD_COUNT.forward), d = s.num + ("forward" == this.direction ? this.PRELOAD_COUNT.forward : this.PRELOAD_COUNT.backward), h = 0; h < this.pages.length; h++) {
-                var u = this.pages[h];
-                u.num < s.num ? u.setPosition("prev", u.num + 1 == s.num) : u.num > s.num ? u.setPosition("next", u.num - 1 == s.num) : u.setPosition("center", u.num == s.num), 
-                u.num >= c && u.num <= d && u.show(), "vertical" == this.viewOpts.viewertype && (u.num < s.num || u.num > s.num + 1) && u.resetScrollOnVerticalMode();
+            var o = !this.currentPage;
+            if (!o && (t == this.currentPage.num || t == this.currentPage.uri)) return !1;
+            if (!i) return 1 != t && this.router.onError(), !1;
+            if (s) if ("horizontal" == this.viewOpts.viewertype || this.isStickyVerticalViewer) s.stop(); else {
+                n == s && e.nextPageVisible || s.stop();
+                var r = s && this.getPage(s.num + 1);
+                r && !(r == i || r == n && e.nextPageVisible) && r.stop();
+            } else e.animation = !1;
+            this.pauseLoading("page-change-animation"), this.currentPage = i, s && s.resetWaitForAnimationEnd(), 
+            clearInterval(this.showPageCompleteInterval), this.$pages_container.toggleClass("disable-transitions", !e.animation), 
+            e.animation && (this.viewOpts.slidein && s && s.num > i.num ? s.waitForAnimationEnd(u) : i.waitForAnimationEnd(u)), 
+            this.direction = !s || s.num < i.num ? "forward" : "backward";
+            var l = i.num - ("forward" == this.direction ? this.PRELOAD_COUNT.backward : this.PRELOAD_COUNT.forward), c = i.num + ("forward" == this.direction ? this.PRELOAD_COUNT.forward : this.PRELOAD_COUNT.backward);
+            "horizontal" != this.opts.viewertype || this.opts.arrows || (l = c = i.num);
+            for (var d = 0; d < this.pages.length; d++) {
+                var h = this.pages[d];
+                h.num < i.num ? h.setPosition("prev", h.num + 1 == i.num) : h.num > i.num ? h.setPosition("next", h.num - 1 == i.num) : h.setPosition("center", h.num == i.num), 
+                h.num >= l && h.num <= c && h.show(), "vertical" == this.viewOpts.viewertype && (h.num < i.num || h.num > i.num + 1) && h.resetScrollOnVerticalMode();
             }
-            function p() {
+            function u() {
                 function t() {
-                    for (var t = 0; t < o.pages.length; t++) {
-                        var e = o.pages[t];
-                        (e.num < c || e.num > d) && e.hide();
+                    for (var t = 0; t < a.pages.length; t++) {
+                        var e = a.pages[t];
+                        (e.num < l || e.num > c) && e.hide();
                     }
-                    !o.lastFinalPageState && s.start(), o.loadPages();
+                    !a.lastFinalPageState && i.start(), a.loadPages();
                 }
-                i.animation || r || window.requestAnimationFrame(function() {
-                    o.$pages_container.removeClass("disable-transitions");
-                }), o.continueLoading("page-change-animation"), "vertical" == o.viewOpts.viewertype && "scroll" != i.initiator && o.setScroll(o.magPagesPos[s.num].y), 
-                o.isPreview && o.$el.scrollTop(0), clearInterval(o.showPageCompleteInterval), o.loadingPaused ? o.showPageCompleteInterval = setInterval(function() {
-                    o.loadingPaused || (clearInterval(o.showPageCompleteInterval), t());
+                e.animation || o || window.requestAnimationFrame(function() {
+                    a.$pages_container.removeClass("disable-transitions");
+                }), a.continueLoading("page-change-animation"), "vertical" == a.viewOpts.viewertype && "scroll" != e.initiator && a.setScroll(a.magPagesPos[i.num].y), 
+                a.isPreview && a.$el.scrollTop(0), clearInterval(a.showPageCompleteInterval), a.loadingPaused ? a.showPageCompleteInterval = setInterval(function() {
+                    a.loadingPaused || (clearInterval(a.showPageCompleteInterval), t());
                 }, 17) : t();
             }
-            !i.animation && p(), this.scheduleSetUrlString({
-                replace: !r,
-                skipInternalHistory: i.skipInternalHistory
-            }), this.router.trackPage(), this.router.setTitle(), this.trigger("pageChanged", s, {
-                showPageCounter: i.animation || i.bySwipe || r || "scroll" == i.initiator,
-                initial: r
-            }), s.trigger("changedTo"), "vertical" == this.viewOpts.viewertype && this.updateArrowsColor(s);
+            !e.animation && u(), this.scheduleSetUrlString({
+                replace: !o,
+                skipInternalHistory: e.skipInternalHistory
+            }), this.router.trackPage(), this.router.setTitle(), this.trigger("pageChanged", i, {
+                showPageCounter: e.animation || e.bySwipe || o || "scroll" == e.initiator,
+                initial: o
+            }), i.trigger("changedTo"), "vertical" == this.viewOpts.viewertype && this.updateArrowsColor(i);
         },
         scheduleSetUrlString: function() {
             if (!Modernizr.chrome) return this.router.setUrlString.apply(this.router, arguments), void (this._resetUrlStringTimeoutFunc = !1);
@@ -6650,16 +6713,16 @@ var googleMapsAPICallbacks = [], facebookAPICallbacks = [], twitterAPICallbacks 
         },
         loadNextWidgetsPack: function() {
             if (this.widgetsPacksLoadQueue.length) if (this.loadingPaused) this.loadNextWidgetsTimer = setTimeout(this.loadNextWidgetsPack, 50); else {
-                var i = this.widgetsPacksLoadQueue.shift();
-                if (i.length) {
-                    var s = _.uniq(_.map(i, "page")), n = s[0];
-                    if (1 !== s.length || n.shown && !n.loaded) {
-                        var a = this.widgetPackCount + 1;
-                        t.performance.widgetPackStart(a, i, n, this.num_id), n.loadWidgetsPack(i, _.bind(function() {
-                            if (t.performance.widgetPackEnd(a, !0), this.widgetPackCount++, this.loadNextWidgetsTimer = setTimeout(this.loadNextWidgetsPack, 17), 
+                var e = this.widgetsPacksLoadQueue.shift();
+                if (e.length) {
+                    var i = _.uniq(_.map(e, "page")), s = i[0];
+                    if (1 !== i.length || s.shown && !s.loaded) {
+                        var n = this.widgetPackCount + 1;
+                        t.performance.widgetPackStart(n, e, s, this.num_id), s.loadWidgetsPack(e, _.bind(function() {
+                            if (t.performance.widgetPackEnd(n, !0), this.widgetPackCount++, this.loadNextWidgetsTimer = setTimeout(this.loadNextWidgetsPack, 17), 
                             1 === this.widgetPackCount && t.performance.now()) {
-                                var i = Math.round(t.performance.now());
-                                this.router.analytics && this.router.analytics.sendEvent("First Widget Pack Loaded", e, i);
+                                var e = Math.round(t.performance.now());
+                                this.router.analytics && this.router.analytics.sendEvent("First Widget Pack Loaded", void 0, e);
                             }
                         }, this));
                     } else this.loadNextWidgetsTimer = setTimeout(this.loadNextWidgetsPack, 17);
@@ -6913,32 +6976,32 @@ var googleMapsAPICallbacks = [], facebookAPICallbacks = [], twitterAPICallbacks 
             }), a = i.getWidgetViewportData(n, i.pageViewport);
             return t.utils.getFixedPositionBox(a.fixed_position, _.pick(a, [ "x", "y", "w", "h" ]), i.scale, s);
         },
-        redrawAboveGlobalWidgets: function(i, s, n, a) {
-            if (!i) {
-                var o = _.isUndefined(this.getScroll()) ? e : this.findPageOnCurrentMagScroll(), r = o && o.page.num, l = o && this.getScrollParams(o);
-                i = r && this.getPage(r), s = i && this.getPage(i.num + 1), n = l && (l.slideInNextPageScroll || l.nextPageScroll), 
-                a = l && l.animation;
+        redrawAboveGlobalWidgets: function(e, i, s, n) {
+            if (!e) {
+                var a = _.isUndefined(this.getScroll()) ? void 0 : this.findPageOnCurrentMagScroll(), o = a && a.page.num, r = a && this.getScrollParams(a);
+                e = o && this.getPage(o), i = e && this.getPage(e.num + 1), s = r && (r.slideInNextPageScroll || r.nextPageScroll), 
+                n = r && r.animation;
             }
-            n = _.isUndefined(n) ? e : Math.abs(n);
-            var c = this.getContainerSizeCached(), d = function(t, e) {
+            s = _.isUndefined(s) ? void 0 : Math.abs(s);
+            var l = this.getContainerSizeCached(), c = function(t, e) {
                 return !t.page || e && t.page.pageViewport !== e.pageViewport;
             };
-            if (_.isUndefined(n)) {
-                var h = this.getPageTransitionTime();
-                _.each(this.aboveGlobalWidgets, function(e) {
-                    var s = i._id && !t.globalwidgets.getUniqueValue("hidden", e, i._id), n = i._id && d(e, i);
-                    i._id && e.updatePage(i), n && this.updateAboveGlobalViewport(e, i), s ? a ? e.wasHidden && t.utils.waitForTransitionEnd(i.$el, h, "transform", t.globalwidgets.show.bind(null, e)) : e.wasHidden && t.globalwidgets.show(e) : !e.wasHidden && t.globalwidgets.hide(e);
+            if (_.isUndefined(s)) {
+                var d = this.getPageTransitionTime();
+                _.each(this.aboveGlobalWidgets, function(i) {
+                    var s = e._id && !t.globalwidgets.getUniqueValue("hidden", i, e._id), a = e._id && c(i, e);
+                    e._id && i.updatePage(e), a && this.updateAboveGlobalViewport(i, e), s ? n ? i.wasHidden && t.utils.waitForTransitionEnd(e.$el, d, "transform", t.globalwidgets.show.bind(null, i)) : i.wasHidden && t.globalwidgets.show(i) : !i.wasHidden && t.globalwidgets.hide(i);
                 }.bind(this));
             } else {
-                var u = Math.abs(n);
-                _.each(this.aboveGlobalWidgets, function(e) {
-                    var n = !t.globalwidgets.getUniqueValue("hidden", e, i._id), a = s && !t.globalwidgets.getUniqueValue("hidden", e, s._id), o = n && a && i.pageViewport === s.pageViewport, r = this.getAboveGlobalBoxMemoized(e._id, i, c), l = this.getAboveGlobalBoxMemoized(e._id, s || i, c), h = n && u > r.top + r.height, p = s && a && l.top > u;
-                    if (h || p || o) {
-                        var g = h ? i : p ? s : e.page, m = d(e, g);
-                        e.updatePage(g), m ? (e.rendered = !1, t.globalwidgets.hide(e).then(function() {
-                            this.updateAboveGlobalViewport(e, g), t.globalwidgets.show(e);
-                        }.bind(this))) : e.wasHidden && t.globalwidgets.show(e);
-                    } else !e.wasHidden && t.globalwidgets.hide(e);
+                var h = Math.abs(s);
+                _.each(this.aboveGlobalWidgets, function(s) {
+                    var n = !t.globalwidgets.getUniqueValue("hidden", s, e._id), a = i && !t.globalwidgets.getUniqueValue("hidden", s, i._id), o = n && a && e.pageViewport === i.pageViewport, r = this.getAboveGlobalBoxMemoized(s._id, e, l), d = this.getAboveGlobalBoxMemoized(s._id, i || e, l), u = n && h > r.top + r.height, p = i && a && d.top > h;
+                    if (u || p || o) {
+                        var g = u ? e : p ? i : s.page, m = c(s, g);
+                        s.updatePage(g), m ? (s.rendered = !1, t.globalwidgets.hide(s).then(function() {
+                            this.updateAboveGlobalViewport(s, g), t.globalwidgets.show(s);
+                        }.bind(this))) : s.wasHidden && t.globalwidgets.show(s);
+                    } else !s.wasHidden && t.globalwidgets.hide(s);
                 }.bind(this));
             }
         }
@@ -7036,7 +7099,8 @@ var googleMapsAPICallbacks = [], facebookAPICallbacks = [], twitterAPICallbacks 
             e.setAttribute("width", t.page.width), e.setAttribute("height", t.page.height), e.setAttribute("_id", t.page._id), 
             document.documentElement.appendChild(e);
             var i = document.createEvent("Events");
-            t && t.error ? i.initEvent("MyErrorEvent", !0, !1) : i.initEvent("MyExtensionEvent", !0, !1), e.dispatchEvent(i);
+            t && t.error ? i.initEvent("MyErrorEvent", !0, !1) : i.initEvent("MyExtensionEvent", !0, !1), e.dispatchEvent(i), 
+            window.loadNotifier && loadNotifier();
         },
         setTitle: function() {
             if (this.mag && this.mag.currentPage) {
@@ -7433,7 +7497,7 @@ var googleMapsAPICallbacks = [], facebookAPICallbacks = [], twitterAPICallbacks 
             var a, o = 1e5, r = e.get("bg_color") || e.viewport_default && e.viewport_default.bg_color, l = this.getRGBA(r, e.get("bg_opacity")), c = this.getRGBA(e.get("color"), e.get("opacity"));
             if ("ellipse" == (n = "hotspot" === e.get("type") ? n || e.get("pin_type") : n || e.get("tp"))) {
                 var d = i / 2, h = s / 2, u = e.get("borders");
-                a = x("ellipse", {
+                a = P("ellipse", {
                     cx: d,
                     cy: h,
                     rx: d,
@@ -7451,7 +7515,14 @@ var googleMapsAPICallbacks = [], facebookAPICallbacks = [], twitterAPICallbacks 
                     for (var m = 0; m < t; m++) d[m].x = (d[m].x - h) * (e / (u - h)), d[m].y = (d[m].y - p) * (i / (g - p)), 
                     d[m].x = Math.round(d[m].x * o) / o, d[m].y = Math.round(d[m].y * o) / o;
                     return d;
-                }(p, i, s), f = function(t, e, i, s, n, a) {
+                }(p, i, s), f = function(t) {
+                    if (!t) return 99999;
+                    for (var e, i = 99999, s = t.length, n = 0; n < s; n++) {
+                        var a = t[n].x - t[(n + 1) % s].x, o = t[n].y - t[(n + 1) % s].y;
+                        (e = Math.sqrt(a * a + o * o)) < i && (i = e), t[n].side = e;
+                    }
+                    return i;
+                }(m), v = function(t, e, i, s, n, a) {
                     if (!t) return {};
                     if (e <= 1e-4) return {};
                     var r = [], l = t.length;
@@ -7471,16 +7542,9 @@ var googleMapsAPICallbacks = [], facebookAPICallbacks = [], twitterAPICallbacks 
                         points: r,
                         radius: e
                     };
-                }(m, g, function(t) {
-                    if (!t) return 99999;
-                    for (var e, i = 99999, s = t.length, n = 0; n < s; n++) {
-                        var a = t[n].x - t[(n + 1) % s].x, o = t[n].y - t[(n + 1) % s].y;
-                        (e = Math.sqrt(a * a + o * o)) < i && (i = e), t[n].side = e;
-                    }
-                    return i;
-                }(m));
-                a = x("path", {
-                    path: v = function(t, e, i) {
+                }(m, g, f);
+                a = P("path", {
+                    path: _ = function(t, e, i) {
                         if (!t) return "";
                         for (var s = t.length, n = "", a = 0; a < s; a++) {
                             var o = 2 * a + 1, r = (2 * a + 2) % (2 * s);
@@ -7491,35 +7555,35 @@ var googleMapsAPICallbacks = [], facebookAPICallbacks = [], twitterAPICallbacks 
                             } else n += t[a].x + " " + t[a].y + " ";
                         }
                         return n + " Z ";
-                    }(m, f.points, f.radius)
+                    }(m, v.points, v.radius)
                 }, l, c, u, e.id + "_" + t, e.get("opacity"));
             }
             if ("line" == n) {
                 u = e.get("weight"), h = Math.round(s / 2) + (u % 2 == 1 ? .5 : 0);
-                var v = "", _ = [ 13 * u / 3, 2 * u / 3 ].join(" "), w = u > 1 ? [ .001, 5 * u / 3 ].join(" ") : [ 1, 2 ].join(" "), y = "dotted" == e.get("stroke") ? u / 2 : 0;
-                if (v = "M" + y + " " + h + " L" + i + " " + h, "solid" == e.get("stroke") && (a = '<path d="' + v + '" style="fill:none; stroke:' + l + ";stroke-width:" + u + '"/>'), 
-                "double" == e.get("stroke")) a = '<path d="' + ("M" + y + " " + (h - u) + " L" + i + " " + (h - u)) + '" style="fill:none; stroke:' + l + ";stroke-width:" + u + '"/>', 
-                a += '<path d="' + ("M" + y + " " + (h + u) + " L" + i + " " + (h + u)) + '" style="fill:none; stroke:' + l + ";stroke-width:" + u + '"/>';
-                "dotted" == e.get("stroke") && (a = '<path d="' + v + '" stroke-linecap="round" stroke-dasharray="' + w + '" style=" fill:none; stroke:' + l + ";stroke-width:" + u + '"/>'), 
-                "dashed" == e.get("stroke") && (a = '<path d="' + v + '" stroke-dasharray="' + _ + '" style=" fill:none; stroke:' + l + ";stroke-width:" + u + '"/>');
+                var _ = "", w = [ 13 * u / 3, 2 * u / 3 ].join(" "), y = u > 1 ? [ .001, 5 * u / 3 ].join(" ") : [ 1, 2 ].join(" "), b = "dotted" == e.get("stroke") ? u / 2 : 0;
+                if (_ = "M" + b + " " + h + " L" + i + " " + h, "solid" == e.get("stroke") && (a = '<path d="' + _ + '" style="fill:none; stroke:' + l + ";stroke-width:" + u + '"/>'), 
+                "double" == e.get("stroke")) a = '<path d="' + ("M" + b + " " + (h - u) + " L" + i + " " + (h - u)) + '" style="fill:none; stroke:' + l + ";stroke-width:" + u + '"/>', 
+                a += '<path d="' + ("M" + b + " " + (h + u) + " L" + i + " " + (h + u)) + '" style="fill:none; stroke:' + l + ";stroke-width:" + u + '"/>';
+                "dotted" == e.get("stroke") && (a = '<path d="' + _ + '" stroke-linecap="round" stroke-dasharray="' + y + '" style=" fill:none; stroke:' + l + ";stroke-width:" + u + '"/>'), 
+                "dashed" == e.get("stroke") && (a = '<path d="' + _ + '" stroke-dasharray="' + w + '" style=" fill:none; stroke:' + l + ";stroke-width:" + u + '"/>');
             }
             if ("icon" == n) {
-                var b = this.iconData || this.current_icon_data;
-                if (!b) return null;
-                var k = b.$svg.clone();
-                return k.css({
+                var k = this.iconData || this.current_icon_data;
+                if (!k) return null;
+                var x = k.$svg.clone();
+                return x.css({
                     width: "100%",
                     height: "100%"
-                }), l = this.getRGBA(r, 1), k.find("*:not(.fixed-color)").each(function() {
+                }), l = this.getRGBA(r, 1), x.find("*:not(.fixed-color)").each(function() {
                     var t = $(this);
                     t.css({
                         fill: "",
                         "fill-opacity": ""
                     }), t.get(0).removeAttribute("fill"), t.get(0).removeAttribute("fill-opacity");
-                }), k.get(0).setAttribute("fill", l), k.get(0).setAttribute("fill-opacity", e.get("bg_opacity")), k;
+                }), x.get(0).setAttribute("fill", l), x.get(0).setAttribute("fill-opacity", e.get("bg_opacity")), x;
             }
             return '<svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="' + i + 'px" height="' + s + 'px">' + a + "</svg>";
-            function x(t, e, i, s, n, a, o) {
+            function P(t, e, i, s, n, a, o) {
                 var r = "mask_" + a, l = "clip_" + a, c = "", d = 2;
                 return n > 0 && o > .99 && (d = 1), c = "<defs>", n > 0 && (c += '<mask id="' + r + '">', "path" == t && (c += '<path d="' + e.path + '" style="fill:white; stroke:black; stroke-width:' + n * d + '"/>'), 
                 "ellipse" == t && (c += '<ellipse cx="' + e.cx + '" cy="' + e.cy + '" rx="' + e.rx + '" ry="' + e.ry + '" style="fill:white; stroke:black; stroke-width:' + n * d + '"/>'), 
@@ -8427,9 +8491,8 @@ var googleMapsAPICallbacks = [], facebookAPICallbacks = [], twitterAPICallbacks 
             "viewer" !== this.environment || Modernizr.touch || this.model.transition && this.$button.addClass("transition");
         },
         applyButtonType: function(t) {
-            var e = "inline-block";
-            "text" === t ? (this.$text.css("display", e), this.$icon.css("display", "none")) : "icon" === t ? (this.$icon.css("display", e), 
-            this.$text.css("display", "none")) : "text_and_icon" === t && this.$icon.add(this.$text).css("display", e);
+            "text" === t ? (this.$text.css("display", "inline-block"), this.$icon.css("display", "none")) : "icon" === t ? (this.$icon.css("display", "inline-block"), 
+            this.$text.css("display", "none")) : "text_and_icon" === t && this.$icon.add(this.$text).css("display", "inline-block");
         },
         applyCircleRadius: function(t) {
             this.$button.css("border-radius", "100%");
@@ -8760,42 +8823,42 @@ var googleMapsAPICallbacks = [], facebookAPICallbacks = [], twitterAPICallbacks 
         shareRegexp: /^share\.(facebook|twitter|pinterest|gplus|linkedin|email)\.(mag|page)$/i,
         render: function() {
             this.makeBox("text"), this.hasHoverAnimation && this.$el.addClass("has-onhover-animation"), this.rendered = !0, 
-            this.bg_color = this.bg_color == e ? "ffffff" : this.bg_color, this.bg_opacity = this.bg_opacity == e ? 0 : this.bg_opacity, 
-            this.column_count = this.column_count == e ? 1 : this.column_count, this.column_gap = this.column_gap == e ? 16 : this.column_gap;
-            var i = [ parseInt(this.bg_color.substring(0, 2), 16), parseInt(this.bg_color.substring(2, 4), 16), parseInt(this.bg_color.substring(4, 6), 16) ];
-            this.bg_opacity > .99 ? this.bg = "rgb(" + i[0] + "," + i[1] + "," + i[2] + ")" : this.bg = "rgba(" + i[0] + "," + i[1] + "," + i[2] + ", " + this.bg_opacity + ")", 
+            this.bg_color = void 0 == this.bg_color ? "ffffff" : this.bg_color, this.bg_opacity = void 0 == this.bg_opacity ? 0 : this.bg_opacity, 
+            this.column_count = void 0 == this.column_count ? 1 : this.column_count, this.column_gap = void 0 == this.column_gap ? 16 : this.column_gap;
+            var e = [ parseInt(this.bg_color.substring(0, 2), 16), parseInt(this.bg_color.substring(2, 4), 16), parseInt(this.bg_color.substring(4, 6), 16) ];
+            this.bg_opacity > .99 ? this.bg = "rgb(" + e[0] + "," + e[1] + "," + e[2] + ")" : this.bg = "rgba(" + e[0] + "," + e[1] + "," + e[2] + ", " + this.bg_opacity + ")", 
             this.text = this.switchTextToViewport(this.text, this.insideHotspot ? "default" : this.page.pageViewport);
-            var s = t.templates["template-viewer-widget-text"], n = $(s(this));
+            var i = t.templates["template-viewer-widget-text"], s = $(i(this));
             this.seamlessFontsShow(function() {
                 this.$el.removeClass("fonts-pending");
             }.bind(this), function() {
                 this.$el.addClass("fonts-pending");
-            }.bind(this)), this.$el.append(n), this.$el.on(Modernizr.isdesktop ? "mouseenter" : "touchstart", "a", this.onLinkMouseEnter), 
+            }.bind(this)), this.$el.append(s), this.$el.on(Modernizr.isdesktop ? "mouseenter" : "touchstart", "a", this.onLinkMouseEnter), 
             this.$el.on(Modernizr.isdesktop ? "mouseleave" : "touchend", "a", this.onLinkMouseLeave), this.$el.on("click", "a", this.onLinkClick), 
-            n.addClass("v" + (this.version || 1));
-            var a = this;
+            s.addClass("v" + (this.version || 1));
+            var n = this;
             return this.$el.find("a").each(function() {
-                var i = $(this), s = i.attr("data-pid"), n = i.attr("href"), o = s;
-                /^back\sto\stop$/i.test(i.attr("href")) && (o = a.page._id);
-                var r = n && a.page.mag.matchSameDomainLink(n);
-                if ((r == i.attr("href") || o) && (r = e), o = o || r) {
-                    var l = a.page.mag.getPageNum(o), c = l && a.page.mag.getPageUri ? "/" + a.page.mag.getPageUri(o) : "javascript:void(0)";
-                    l ? i.attr("href", c).addClass("maglink").attr("target", "") : i.removeAttr("href"), o == a.page._id && (i.addClass("back-to-top"), 
-                    s && (a.is_global || a.hasGlobalParent) && i.addClass("current"));
-                } else if (/^__rm_goback$/i.test(i.attr("href"))) i.attr("href", "javascript:void(0)").addClass("goback-link"); else if (a.mailchimpMatcher.test(i.attr("href"))) {
-                    var d = i.attr("href").match(a.mailchimpMatcher)[1];
-                    i.attr("href", "javascript:void(0)").attr("data-mailchimp", d).addClass("mailchimp-link"), t.initutils.initMailchimpAPI();
-                } else if (a.shareRegexp.test(i.attr("href"))) {
-                    var h = i.attr("href").match(a.shareRegexp);
-                    i.attr("href", "javascript:void(0)").attr("data-share-provider", h[1]).attr("data-share-type", h[2]).addClass("share-link");
-                } else if (a.anchorRegexp.test(i.attr("href"))) {
-                    i.attr("href", "javascript:void(0)").addClass("anchor-link");
-                    var u = i.attr("data-page-uri"), p = _.findWhere(a.mag.pages, {
-                        _id: u
-                    }) || a.page;
-                    i.attr("data-page-uri", p.uri || p.num);
-                } else i.addClass("external-link");
-                !i.attr("href") || 0 != i.attr("href").indexOf("mailto") && 0 != i.attr("href").indexOf("tel") || i.attr("target", "");
+                var e = $(this), i = e.attr("data-pid"), s = e.attr("href"), a = i;
+                /^back\sto\stop$/i.test(e.attr("href")) && (a = n.page._id);
+                var o = s && n.page.mag.matchSameDomainLink(s);
+                if ((o == e.attr("href") || a) && (o = void 0), a = a || o) {
+                    var r = n.page.mag.getPageNum(a), l = r && n.page.mag.getPageUri ? "/" + n.page.mag.getPageUri(a) : "javascript:void(0)";
+                    r ? e.attr("href", l).addClass("maglink").attr("target", "") : e.removeAttr("href"), a == n.page._id && (e.addClass("back-to-top"), 
+                    i && (n.is_global || n.hasGlobalParent) && e.addClass("current"));
+                } else if (/^__rm_goback$/i.test(e.attr("href"))) e.attr("href", "javascript:void(0)").addClass("goback-link"); else if (n.mailchimpMatcher.test(e.attr("href"))) {
+                    var c = e.attr("href").match(n.mailchimpMatcher)[1];
+                    e.attr("href", "javascript:void(0)").attr("data-mailchimp", c).addClass("mailchimp-link"), t.initutils.initMailchimpAPI();
+                } else if (n.shareRegexp.test(e.attr("href"))) {
+                    var d = e.attr("href").match(n.shareRegexp);
+                    e.attr("href", "javascript:void(0)").attr("data-share-provider", d[1]).attr("data-share-type", d[2]).addClass("share-link");
+                } else if (n.anchorRegexp.test(e.attr("href"))) {
+                    e.attr("href", "javascript:void(0)").addClass("anchor-link");
+                    var h = e.attr("data-page-uri"), u = _.findWhere(n.mag.pages, {
+                        _id: h
+                    }) || n.page;
+                    e.attr("data-page-uri", u.uri || u.num);
+                } else e.addClass("external-link");
+                !e.attr("href") || 0 != e.attr("href").indexOf("mailto") && 0 != e.attr("href").indexOf("tel") || e.attr("target", "");
             }), t.screenshot && !this.insideHotspot ? this.waitForUsedFontsLoad() : this.widgetIsLoaded(), this.$el.find("span.soundcite").each(function(e, i) {
                 t.screenshot || window.soundcite && window.soundcite.createPlayer(i);
             }), this;
@@ -9288,7 +9351,7 @@ window.onYouTubeIframeAPIReady = function() {
             }), Modernizr.safari && (t.html5 = !0), t.video_id ? n[t.provider_name](t) : null;
         },
         onPlayerReady: function() {
-            !this.destroyed && this.player && (this.$container || _.delay(_.bind(function() {
+            !this.destroyed && this.player && (this.mute ? this.player.mute() : this.player.unMute(), this.$container || _.delay(_.bind(function() {
                 this.$iframe && this.$iframe.addClass("fade-out");
             }, this), 600), this.player.on("pause", this.onPause), this.player.on("play", this.onPlay), this.start_time && (this.player.rewind(this.start_time), 
             this.player.pause()), Modernizr.isdesktop && "vimeo" == this.provider_name.toLowerCase() && this.player.on("playProgress", this.onProgress), 
@@ -9301,7 +9364,7 @@ window.onYouTubeIframeAPIReady = function() {
                 this.player.checkLoop() && (clearInterval(this.loopInterval), Modernizr.safari && _.delay(function() {
                     this.onPlay();
                 }.bind(this), 200));
-            }, this), 100)), this.mute ? this.player.mute() : this.player.unMute(), this.onPlayFired = !0;
+            }, this), 100)), this.onPlayFired = !0;
         },
         onPause: function() {
             if ("Vimeo" == this.provider_name) this.player.getCurrentTime(_.bind(function(e) {
@@ -9458,7 +9521,7 @@ window.onYouTubeIframeAPIReady = function() {
             return this.makeBox("widget-gmaps"), this.$el.html($('<div class="map-container"></div>')), this.rendered = !0, 
             t.initutils.initGMapsAPI(function() {
                 this.destroyed || _.defer(function() {
-                    this.destroyed || (this.map = new google.maps.Map(this.$(".map-container").get(0), {
+                    this.destroyed || (t.scale.isOn() && this.scale(), this.map = new google.maps.Map(this.$(".map-container").get(0), {
                         zoom: this.map_zoom,
                         center: new google.maps.LatLng(this.center_lat, this.center_lng),
                         mapTypeId: this.map_type_id || google.maps.MapTypeId.ROADMAP,
@@ -9495,6 +9558,17 @@ window.onYouTubeIframeAPIReady = function() {
                     }));
                 }.bind(this));
             }.bind(this)), this;
+        },
+        scale: function() {
+            var e = this.mag.getScale(this.page.pageViewport), i = this.$(".map-container");
+            if (t.scale.isZoom()) i.css("zoom", 1 / e); else if (t.scale.isTransform()) {
+                var s = 100 * e, n = (s - 100) / 2;
+                i.css({
+                    transform: "scale(" + 1 / e + ") translate(-" + n + "%, -" + n + "%)",
+                    width: s + "%",
+                    height: s + "%"
+                });
+            }
         },
         start: function() {
             return this.started = !0, this.rendered && !this.destroyed && this.map ? (google.maps.event.trigger(this.map, "resize"), 
@@ -9943,9 +10017,8 @@ window.onYouTubeIframeAPIReady = function() {
     t.models.Model = t.models.SocketModel.extend({
         save: function(e, s, n) {
             var a, o = this;
-            _.isObject(e) || null == e ? (a = e, n = s) : (a = {})[e] = s, n && n.skipMagChanging && this.urlRoot && (n.url = this.url() + (this.url().indexOf("?") > -1 ? "&" : "?") + "skip_changed=true"), 
-            n = n ? _.clone(n) : {};
-            var r = i.save.apply(this, arguments);
+            if (_.isObject(e) || null == e ? (a = e, n = s) : (a = {})[e] = s, n && n.skipMagChanging && this.urlRoot && (n.url = this.url() + (this.url().indexOf("?") > -1 ? "&" : "?") + "skip_changed=true"), 
+            !(n = n ? _.clone(n) : {}).skipPersist) var r = i.save.apply(this, arguments);
             if (r) return r.error(function(e, i) {
                 "abort" != i && (e.status && e.status < 500 || (o.wasNotSaved = !0, t.constructorRouter.raiseConnectionError()));
             }), r.success(function() {
@@ -10366,6 +10439,18 @@ window.onYouTubeIframeAPIReady = function() {
                 }, this)
             });
         },
+        getSSLState: function(t) {
+            return $.ajax({
+                type: "GET",
+                url: this.SSLDOMAIN_URL + this.get("num_id") + "/ssl",
+                success: _.bind(function(e) {
+                    t.success && t.success(e);
+                }),
+                error: _.bind(function(e) {
+                    return e && e.status >= 500 ? t.error(null) : t.error && t.error(e.responseJSON);
+                })
+            });
+        },
         loadUserTemplates: function(t) {
             this.currentXHR && this.currentXHR.abort(), this.currentXHR = $.ajax({
                 url: "/api/user_templates/",
@@ -10683,6 +10768,18 @@ window.onYouTubeIframeAPIReady = function() {
                 error: _.bind(function(t) {
                     return console.log(t), t && t.status >= 500 ? i.error(null) : i.error && i.error(t.responseJSON);
                 }, this)
+            });
+        },
+        getSSLState: function(t) {
+            return $.ajax({
+                type: "GET",
+                url: this.SSLDOMAIN_URL,
+                success: _.bind(function(e) {
+                    t.success && t.success(e);
+                }),
+                error: _.bind(function(e) {
+                    return e && e.status >= 500 ? t.error(null) : t.error && t.error(e.responseJSON);
+                })
             });
         },
         isBetaTester: function() {
